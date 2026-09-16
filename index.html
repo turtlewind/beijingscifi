@@ -1,0 +1,604 @@
+
+<html>
+  <head>
+	<title>Beijing Science Fiction Reading Group</title>
+    <meta name="viewport" content="width=540" />
+	<meta charset="utf-8">
+
+	<style>
+	body {font-family:arial; helvetica; sans-serif; font-size:20px}
+	a {font-weight:bold}
+
+	.header_outer {width:100%; background-color:lightblue}
+	.header_inner {padding:10px 5% 10px 5%; font-size:26px; font-weight:bold}
+	.next_meeting {width:80%; position:relative; left:10%; margin-top:10px; margin-bottom:20px; padding:10px; border:dashed black 1px}
+	.text_block {width:90%; position:relative; left:5%; margin-top:10px; margin-bottom:20px; line-height:150%}
+	.bordered {padding:10px 5% 10px 5%; width:80%; border:solid black 1px}
+	.subheading {font-weight:bold; margin-bottom:10px}
+	.story_list td {line-height:150%; min-width:200px; font-size:20px; padding-top:10px; padding-bottom:10px}
+	.show_all {margin-left:10px; margin-top:10px; color:blue; font-weight:bold; cursor:pointer}
+	
+	</style>
+	
+	<script>
+	function showAllStories(){
+		document.getElementById("showall").style.display="none";
+		document.getElementById("longlist").style.display="";
+	}
+	
+	function checkLaziness(){
+		meeting_date=new Date("2026-09-22")
+		if (new Date() > meeting_date){
+			document.getElementById("laziness_warning").style.display="";
+		}
+	}
+	</script>
+	
+  </head>
+
+  <body onload="checkLaziness()">
+    <div class="header_outer"><div class="header_inner">Beijing Science Fiction Reading Group</div></div>
+	
+	<div class="next_meeting">
+	<b>Next meeting:</b>
+	<br /><br />
+	
+			
+		Date: <b>8pm, Tuesday September 22, 2026</b>
+	
+	<br /><br />
+	
+		Location: <a href="https://map.baidu.com/poi/Wiggly%20Jigglys%20%E6%AC%A7%E4%B9%9F/@12961747.915,4830543.84,19z?uid=b2531e7add3b9ad14d2fdfba&querytype=detailConInfo">Wiggly Jiggly's (欧也Cafe)</a> in Dongzhimen
+
+	<br /><br />
+	
+		Story for discussion: <b>Crying in the Rain</b>, by Tanith Lee (1987)
+	
+	<br /><br />
+		<span id="laziness_warning" style="color:red; display:none">We're sometimes a bit lazy with updating the website. If the "next meeting" is in the past we'll still probably be meeting on Tuesday at Wiggly Jiggly's (欧也 Cafe), Dongzhimen - check the WeChat group for updates.</span>
+	</div>
+	
+	<div class="text_block">
+	The Beijing Science Fiction Reading Group is a friendly group of science fiction fans in Beijing, China. We meet most Tuesdays at 8pm to discuss a different English-language science fiction story each week - usually in <a href="https://map.baidu.com/poi/Wiggly%20Jigglys%20%E6%AC%A7%E4%B9%9F/@12961747.915,4830543.84,19z?uid=b2531e7add3b9ad14d2fdfba&querytype=detailConInfo">Wiggly Jiggly's (欧也Cafe)</a> in Dongzhimen (close to Exit D of Dongzhimen subway station). We previously used to meet at The Bookworm before it closed.
+	<br /><br />
+	Meetings are free and informal, and usually discuss short fiction so that everyone has the chance to read the story before the meeting. Discussions are in English but non-native speakers are of course very welcome.
+	<br /><br />
+	We welcome all new members, whether you're an established science fiction fan or new to the genre. If you want to join our WeChat group, please <a href="kevin_wechat_qr_code.jpg" rel="nofollow">add Kevin on WeChat</a> and ask him to add you - unfortunately we're now too big to join directly by QR code. 
+	</div>
+	
+	<div class="text_block bordered">
+	<div class="subheading">Previously discussed stories:</div>
+	
+	<table class="story_list">
+		<tr><td>September 15, 2026</td><td><a href="https://www.fictionliberationfront.net/snowbirds.html">Snowbirds</a>, by Lewis Shiner (1982), and <a href="https://www.fadedpage.com/books/20220847/html.php">Vintage Season</a>, by Lawrence O'Donnell (1948)</td></tr>
+		<tr><td>September 8, 2026</td><td><a href="https://reactormag.com/cutting-corners-yoon-ha-lee/">Cutting Corners</a>, by Yoon Ha Lee (2026)</td></tr>
+		<tr><td>September 1, 2026</td><td><a href="http://www.intergalacticmedicineshow.com/cgi-bin/mag.cgi?do=issue&vol=i1&article=_mazer">Mazer in Prison</a >, by Orson Scott Card (2005)</td></tr>
+		<tr><td>August 25, 2026</td><td><a href="https://www.gutenberg.org/files/51233/51233-h/51233-h">The Marching Morons</a>, by C M Kornbluth (1951)</td></tr>
+		<tr><td>August 18, 2026</td><td><b>Think Like a Dinosaur</b>, by James Patrick Kelly (1995)</td></tr>
+		<tr><td>August 4, 2026</td><td><b>Dogfight</b>, by Michael Swanwick and William Gibson (1985)</td></tr>
+		<tr><td>July 28, 2026</td><td><a href="https://us.macmillan.com/books/9781429965170/futureonfire/">Rachel In Love</a>, by Pat Murphy (1987)</td></tr>
+		<tr><td>July 21, 2026</td><td><a href="https://archive.org/details/Fantasy_Science_Fiction_v010n02_1956-02_PDF/page/3/mode/1up">The Country of the Kind</a>, by Damon Knight (1956)</td></tr>
+		<tr><td>July 14, 2026</td><td><a href="https://www.lightspeedmagazine.com/fiction/the-crystal-spheres/">The Crystal Spheres</a>, by David Brin (1984)</td></tr>
+		<tr><td>July 7, 2026</td><td><a href="https://clarkesworldmagazine.com/chen_01_20/">Ancestral Temple in a Box</a>, by Chen Qiufan (2019, author) / Emily Jin (2020, translator)</td></tr>
+	</table>
+
+	<div id="showall" onclick="showAllStories()" class="show_all">Show all</div>
+	
+	<table id="longlist" class="story_list" style="display:none">
+		<tr><td>June 30, 2026</td><td><a href="https://americanliterature.com/author/eta-hoffmann/short-story/the-sand-man">The Sand-Man</a >, by ETA Hoffmann (1816)</td></tr>
+		<tr><td>June 23, 2026</td><td><b>Cal</b>, by Isaac Asimov (1991)</td></tr>
+		<tr><td>June 16, 2026</td><td><b>Bloodchild</b>, by Octavia Butler (1984)</td></tr>
+		<tr><td>June 9, 2026</td><td><a href="https://www.ceremade.dauphine.fr/~ekeland/lectures/Mathematical%20Models%20in%20Social%20Sciences/ursula-k-le-guin-the-ones-who-walk-away-from-omelas.pdf">The Ones who Walk Away from Omelas</a > (1973) and <a href="https://www.d.umn.edu/cla/faculty/tbacig/hmcl3230/3230anth/day.html">The Day Before the Revolution</a > (1974), by Ursula K LeGuin</td></tr>
+		<tr><td>June 2, 2026</td><td><a href="https://clarkesworldmagazine.com/tashiro_07_25/">Missing Helen</a >, by Tia Tashiro (2025)</td></tr>
+		<tr><td>May 24, 2026</td><td><b>Hinterlands</b>, by William Gibson (1981)</td></tr>
+		<tr><td>May 19, 2026</td><td><b>The Empire Strikes Back</b> (movie, 1980) and <b>The Sith of Datawork</b>, by Ken Liu (2017)</td></tr>
+		<tr><td>May 12, 2026</td><td><a href="https://www.diabolicalplots.com/dp-fiction-123b-laser-eyes-aint-everything-by-effie-seiberg/">Laser Eyes Ain't Everything</a >, by Effie Seiberg (2025), and <a href="https://shortstoryproject.com/stories/none-so-blind/">None So Blind</a >, by Joe Halderman (1994)</td></tr>
+		<tr><td>May 5, 2026</td><td><a href="https://www.uncannymagazine.com/article/kaiju-agonistes/">Kaijiu Agonistes</a >, by Scott Lynch (2025)</td></tr>
+		<tr><td>April 28, 2026</td><td><b>The Caress</b>, by Greg Egan (1990)</td></tr>
+		<tr><td>April 21, 2026</td><td><b>The Hitchhiker's Guide to the Galaxy</b> (second half), by Douglas Adams (1979)</td></tr>
+		<tr><td>April 14, 2026</td><td><a href="https://www.lightspeedmagazine.com/fiction/through-the-machine/">Through the Machine</a >, by P A Cornell (2025)</td></tr>
+		<tr><td>April 7, 2026</td><td><a href="https://www.ele.uri.edu/faculty/vetter/Other-stuff/The-Machine-Stops.pdf">The Machine Stops</a >, by E M Forster (1909)</td></tr>
+		<tr><td>March 31, 2026</td><td><b>Project Hail Mary</b> (movie, 2025), and/or the original book by Andy Weir (2021)</td></tr>
+		<tr><td>March 24, 2026</td><td><b>The Hitchhiker's Guide to the Galaxy</b> (first half), by Douglas Adams (1979)</td></tr>
+		<tr><td>March 17, 2026</td><td><a href="https://www.antipope.org/charlie/blog-static/fiction/accelerando/accelerando.html#Lobsters">Lobsters</a >, by Charles Stross (2001)</td></tr>
+		<tr><td>March 10, 2026</td><td><a href="https://www.sfsfss.com/stories/Blish,%20James%20-%20%5bNovelette%5d%20Surface%20Tension%20%5bv1.0%5d.htm">Surface Tension</a >, by James Blish (1971)</td></tr>
+		<tr><td>March 3, 2026</td><td><a href="https://abitofscififromthepast.wordpress.com/2019/11/26/a-meeting-with-medusa-arthur-c-clarke/">A Meeting with Medusa</a>, by Arthur C Clarke (1971)</td></tr>
+		<tr><td>January 27, 2026</td><td><b>Vaster than Empires and More Slow</b>, by Ursula K LeGuin (1971)</td></tr>
+		<tr><td>January 20, 2026</td><td><a href="https://clarkesworldmagazine.com/chi_01_24/">Stars Don't Dream</a>, by Chi Hui (2023), translated by John Chu (2024)</td></tr>
+		<tr><td>January 13, 2026</td><td><a href="https://asimovs.com/wp-content/uploads/2025/03/MereFlesh_Maxey.pdf">Mere Flesh</a>, by James Maxey (2024)</td></tr>
+		<tr><td>January 6, 2026</td><td><a href="https://www.lightspeedmagazine.com/fiction/a-catalog-of-21st-century-ghosts/">A Catalog of 21st Century Ghosts</a>, by Pat Murphy (2024)</td></tr>
+		<tr><td>December 30, 2025</td><td><a href="https://archive.org/details/galaxymagazine-1952-11">The Martian Way</a>, by Isaac Asimov (1952)</td></tr>
+		<tr><td>December 23, 2025</td><td><a href="https://lecturia.org/en/short-stories/arthur-c-clarke-the-star/17702/">The Star</a>, by Arthur C Clarke (1955)</td></tr>
+		<tr><td>December 16, 2025</td><td><a href="https://www.sfsfss.com/stories2/Bester,%20Alfred%20-%20Fondly%20Fahrenheit%20v1.0.htm">Fondly Fahrenheit</a> (1954) and <b>The Men Who Murdered Mohammed</b> (1958), by Alfred Bester</td></tr>
+		<tr><td>December 9, 2025</td><td><b>And the Moon be Still as Bright</b>, by Ray Bradbury (1948)</td></tr>
+		<tr><td>December 2, 2025</td><td><b>The Earth Men</b>, by Ray Bradbury (1948)</td></tr>
+		<tr><td>November 25, 2025</td><td><a href="https://www.libraryofshortstories.com/onlinereader/there-will-come-soft-rains">There Will Come Soft Rains</a>, by Ray Bradbury (1950)</td></tr>
+		<tr><td>November 18, 2025</td><td><a href="https://asimovs.com/wp-content/uploads/2025/03/DeathGorgon_Egan.pdf">Death and the Gorgon</a>, by Greg Egan (2024)</td></tr>
+		<tr><td>November 11, 2025</td><td><a href="https://clarkesworldmagazine.com/crosshill_12_14/">The Magician and Laplace's Demon</a>, by Tom Crosshill (2014)</td></tr>
+		<tr><td>November 4, 2025</td><td><a href="https://www.sciphijournal.org/index.php/2022/03/24/syphilus-sisyphus/">Syphilus, Sisyphus</a>, by Leonardo Espinoza Benavides (2022)</td></tr>
+		<tr><td>September 23, 2025</td><td><b>The Cookie Monster</b>, by Vernor Vinge (2003)</td></tr>
+		<tr><td>September 16, 2025</td><td><b>Appropriate Love</b>, by Greg Egan (1991)</td></tr>
+		<tr><td>September 9, 2025</td><td><a href="https://www.apexbookcompany.com/a/blog/apex-magazine/post/mountain">Mountain</a>, by Liu Cixin (2006)</td></tr>
+		<tr><td>September 2, 2025</td><td><a href="https://hell.pl/szymon/Baen/The%20best%20of%20Jim%20Baens%20Universe/Vol%201%20Num%201/1932093001__17.htm">Light of Other Days</a>, by Bob Shaw (1966)</td></tr>
+		<tr><td>August 12, 2025</td><td><a href="https://www.astro.sunysb.edu/fwalter/AST389/ASoundofThunder.pdf">A Sound of Thunder</a>, by Ray Bradbury (1952)</td></tr>
+		<tr><td>August 7, 2025</td><td><b>Bridle and Saddle, aka The Mayors</b>, by Isaac Asimov (1942)</td></tr>
+		<tr><td>July 10, 2025</td><td><b>Foundation (short story), aka The Encyclopedists</b>, by Isaac Asimov (1941)</td></tr>
+		<tr><td>June 12, 2025</td><td><a href="https://fyp.uoregon.edu/sites/default/files/story_of_your_life.pdf">Story Of Your Life</a>, by Ted Chiang (1998)</td></tr>
+		<tr><td>June 5, 2025</td><td><a href="https://sprague-grundy.github.io/two_games/">Two Games</a>, by Sprague Grundy (2021)</td></tr>
+		<tr><td>May 22, 2025</td><td><b>Skystalk</b>, by Charles Sheffield (1979)</td></tr>
+		<tr><td>May 8, 2025</td><td><a href="https://www.baen.com/Chapters/9781481483605/9781481483605___6.htm">Becalmed in Hell</a>, by Larry Niven (1965)</td></tr>
+		<tr><td>May 1, 2025</td><td><a href="https://clarkesworldmagazine.com/shoemaker_08_15/">Today I Am Paul</a>, by Martin Shoemaker (2015)</td></tr>
+		<tr><td>April 17, 2025</td><td><a href="https://clarkesworldmagazine.com/wang_02_25/">The Hanging Tower of Babel</a>, by Wang Zhenzhen (2023), translated by Carmen Yiling Yan (2025)</td></tr>
+		<tr><td>April 10, 2025</td><td><a href="http://www.gutenberg.org/ebooks/51461">A Pail of Air</a>, by Fritz Lieber (1951)</td></tr>
+		<tr><td>March 27, 2025</td><td><a href="https://www.gutenberg.org/ebooks/29614">The Game of Rat and Dragon</a>, by Cordwainer Smith (1955)</td></tr>
+		<tr><td>March 20, 2025</td><td><a href="https://reactormag.com/earth-hour/">Earth Hour</a>, by Ken McLeod (2011)</td></tr>
+		<tr><td>March 13, 2025</td><td><a href="http://cdn.michaelgeist.ca/wp-content/uploads/2016/04/The-Evitable-Conflict.pdf">The Evitable Conflict</a>, by Isaac Asimov (1950)</td></tr>
+		<tr><td>March 6, 2025</td><td><a href="https://clarkesworldmagazine.com/gregory_11_17_reprint/">Second Person, Present Tense</a>, by Daryl Gregory (2005)</td></tr>
+		<tr><td>February 27, 2025</td><td><a href="https://www.baen.com/Chapters/9781625791122/9781625791122___2.htm">The Dog Said Bow-Wow</a>, by Michael Swanwick (2001)</td></tr>
+		<tr><td>February 20, 2025</td><td><a href="https://clarkesworldmagazine.com/swanwick_10_16_reprint/">The Very Pulse of the Machine</a>, by Michael Swanwick (1998)</td></tr>
+		<tr><td>February 13, 2025</td><td><a href="http://clarkesworldmagazine.com/debodard_06_12/">Immersion</a>, by Aliette de Bodard (2012)</td></tr>
+		<tr><td>February 6, 2025</td><td><a href="https://clarkesworldmagazine.com/kim_11_22/">Calf Cleaving in the Benthic Black</a>, by Isabel J Kim (2022)</td></tr>
+		<tr><td>January 23, 2025</td><td><b>The Pardoner's Tale</b>, by Robert Silverberg (1987)</td></tr>
+		<tr><td>January 16, 2025</td><td><a href="https://reactormag.com/form-8774-d-alex-irvine/">Form 8774-D</a>, by Alex Irvine (2023)</td></tr>
+		<tr><td>January 9, 2025</td><td><a href="https://www.baen.com/Chapters/0671878794/0671878794___2.htm">The Warriors</a>, by Larry Niven (1966)</td></tr>
+		<tr><td>December 19, 2024</td><td><a href="https://www.baen.com/angelinflight">Angel In Flight</a>, by Sarah Hoyt (2012)</td></tr>
+		<tr><td>December 12, 2024</td><td><a href="https://www.abelard.org/asimov.php">Profession</a>, by Isaac Asimov (1957)</td></tr>
+		<tr><td>November 28, 2024</td><td><a href="https://www.baen.com/Chapters/9781625791542/9781625791542___3.htm">Air Raid</a>, by John Varley (1977)</td></tr>
+		<tr><td>November 21, 2024</td><td><a href="https://clarkesworldmagazine.com/tiptree_05_17_reprint/">The Man Who Walked Home</a>, by James Tiptree Jr (1972)</td></tr>
+		<tr><td>November 14, 2024</td><td><a href="https://www.lightspeedmagazine.com/fiction/the-old-equations/">The Old Equations</a>, by Jake Kerr (2011)</td></tr>
+		<tr><td>November 7, 2024</td><td><a href="https://compellingsciencefiction.com/stories/reflection.html">Reflection</a>, by Aaron Wright (2016)</td></tr>
+		<tr><td>October 31, 2024</td><td><a href="https://clarkesworldmagazine.com/goodman_12_21/">Vegvisir</a>, by David Goodman (2021)</td></tr>
+		<tr><td>October 24, 2024</td><td><a href="https://compellingsciencefiction.com/stories/opportunitiesforlostchildren.html">Opportunities for Lost Children</a>, by James Beamon (2016)</td></tr>
+		<tr><td>October 10, 2024</td><td><a href="https://www.gutenberg.org/files/788/788-h/788-h.htm">The Red One</a>, by Jack London (1919)</td></tr>
+		<tr><td>October 3, 2024</td><td><a href="https://escapepod.org/2013/06/28/ep402-the-tale-of-the-golden-eagle/">The Tale of the Golden Eagle</a>, by David D Levine (2003)</td></tr>
+		<tr><td>September 26, 2024</td><td><a href="https://leyanlo.tripod.com/SrAnthology/OSC-FatFarm.pdf">Fat Farm</a>, by Orson Scott Card (1980), and <a href="https://eidolon.net/?story=The Extra">The Extra</a>, by Greg Egan (1990)</td></tr>
+		<tr><td>September 19, 2024</td><td><a href="https://www.baen.com/chapters/W200506/0743499107___2.htm">A Logic Named Joe</a>, by Murray Leinster (1946)</td></tr>
+		<tr><td>September 12, 2024</td><td><b>The Pope of the Chimps</b>, by Robert Silverberg (1982)</td></tr>
+		<tr><td>September 5, 2024</td><td><a href="https://clarkesworldmagazine.com/goodman_10_23/">Such Is My Idea Of Happiness</a>, by David Goodman (2023)</td></tr>
+		<tr><td>August 29, 2024</td><td><a href="https://www.roboticsthroughsciencefiction.com/single-post/2019/12/09/robotics-through-science-fiction-chapter-3-long-shot">Long Shot</a>, by Vernor Vinge (1972)</td></tr>
+		<tr><td>August 22, 2024</td><td><a href="https://readerslibrary.org/wp-content/uploads/Bicycle-Repairman.pdf">Bicycle Repairman</a>, by Bruce Sterling (1996)</td></tr>
+		<tr><td>August 15, 2024</td><td><a href="https://www.uncannymagazine.com/article/the-year-without-sunshine/">The Year Without Sunshine</a>, by Naomi Kritzer (2023)</td></tr>
+		<tr><td>August 8, 2024</td><td><a href="https://reactormag.com/breathing-constellations-rich-larson/"> Breathing Constellations </a>, by Rich Larson (2024)</td></tr>
+		<tr><td>August 1, 2024</td><td><a href="https://www.tor.com/2013/07/17/the-best-we-can/">The Best We Can</a>, by Carrie Vaughn (2013)</td></tr>
+		<tr><td>July 25, 2024</td><td><a href="https://www.astro.sunysb.edu/fwalter/HON301/franchise.pdf">Franchise</a>, by Isaac Asimov (1955)</td></tr>
+		<tr><td>July 18, 2024</td><td><b>Good Hunting</b> (<a href="http://strangehorizons.com/fiction/good-hunting-part-1-of-2/">Part 1</a>, <a href="http://strangehorizons.com/fiction/good-hunting-part-2-of-2/">Part 2</a>), by Ken Liu (2012)</td></tr>
+		<tr><td>July 11, 2024</td><td><a href="https://clarkesworldmagazine.com/yoachim_06_24/">Our Chatbots Said "I Love You," Shall We Meet?</a>, by Caroline M Yoachim (2024)</td></tr>
+		<tr><td>July 4, 2024</td><td>Movie night: <b>Independence Day</b> (1996)</td></tr>
+		<tr><td>June 27, 2024</td><td><a href="https://www.lightspeedmagazine.com/fiction/maneki-neko/">Maneki Neko</a>, by Bruce Sterling (1998)</td></tr>
+		<tr><td>June 20, 2024</td><td><a href="https://clarkesworldmagazine.com/tashiro_04_24/">An Intergalactic Smugglers Guide to Homecoming</a>, by Tia Tashiro (2024)</td></tr>
+		<tr><td>June 13, 2024</td><td><a href="http://www.hatrack.com/osc/stories/enders-game.shtml">Ender's Game (short story version)</a>, by Orson Scott Card (1977)</td></tr>
+		<tr><td>June 7, 2024</td><td>Movie night: <b>Furiosa</b> (2024)</td></tr>
+		<tr><td>May 30, 2024</td><td><a href="http://baencd.freedoors.org/Books/The%20World%20Turned%20Upside%20Down/0743498747__15.htm">The Last Command</a>, by Keith Laumer (1967)</td></tr>
+		<tr><td>May 23, 2024</td><td><a href="http://strangehorizons.com/fiction/nextype/">Nextype</a>, by Sam Kyung Yoo (2023)</td></tr>
+		<tr><td>May 9, 2024</td><td><a href="http://www.sfsfss.com/stories2/Solitude-LeGuin.html">Solitude</a>, by Ursula K LeGuin (1994)</td></tr>
+		<tr><td>May 2, 2024</td><td><a href="http://www.mikebrotherton.com/diamonds/?page_id=99">The Listening Glass</a>, by Alexis Glynn Latner (1991)</td></tr>
+		<tr><td>April 25, 2024</td><td>Movie night: <b>Dredd</b> (2012)</td></tr>
+		<tr><td>April 18, 2024</td><td><a href="https://clarkesworldmagazine.com/gu_02_23/">Introduction to 2181 Overture, Second Edition</a>, by Gu Shi (2020, author), translated by Emily Jin (2023, translator) (with the author)</td></tr>
+		<tr><td>April 11, 2024</td><td><a href="https://clarkesworldmagazine.com/kritzer_05_23/">Better Living Through Algorithms</a>, by Naomi Kritzer (2023)</td></tr>
+		<tr><td>April 4, 2024</td><td><a href="https://web.jfet.org/pub/truename/truename.pdf">True Names</a>, by Vernor Vinge (1981)</td></tr>
+		<tr><td>March 28, 2024</td><td><b>The Three Body Problem</b>, by Liu Cixin (2008), and/or the Netflix TV series</td></tr>
+		<tr><td>March 21, 2024</td><td><a href="https://www.gutenberg.org/files/30240/30240-h/30240-h.htm">The Big Trip Up Yonder</a> (1954), <a href="https://www.tnellen.com/cybereng/harrison.html">Harrison Bergeron</a> (1961) and <a href="https://www.gutenberg.org/files/21279/21279-h/21279-h.htm">2BR02B</a> (1962), by Kurt Vonnegut</td></tr>
+		<tr><td>March 14, 2024</td><td><b>Dune 2</b> (Movie, 2024), and/or <b>Dune</b>, by Frank Herbert (1965)</td></tr>
+		<tr><td>March 7, 2024</td><td><a href="http://baencd.freedoors.org/Books/The%20World%20Turned%20Upside%20Down/0743498747__10.htm">Goblin Night</a>, by James Schmitz (1965)</td></tr>
+		<tr><td>February 22, 2024</td><td><b>The Annihilation of Angkor Aperion</b>, by Fred Saberhagen (1974)</td></tr>
+		<tr><td>February 1, 2024</td><td><a href="https://www.lightspeedmagazine.com/fiction/critical-mass/">Critical Mass</a>, by Peter Watts (2022)</td></tr>
+		<tr><td>January 25, 2024</td><td><a href="https://whatever.scalzi.com/2010/10/02/when-the-yogurt-took-over-a-short-story/">When the Yogurt Took Over</a>, by John Scalzi (2010)</td></tr>
+		<tr><td>January 18, 2024</td><td><b>Superiority</b> (1951) and <b>Loophole</b> (1946), by Arthur C Clarke</td></tr>
+		<tr><td>January 11, 2024</td><td><b>The Screwfly Solution</b>, by Racoona Sheldon (1977)</td></tr>
+		<tr><td>January 4, 2024</td><td><a href="https://www.baen.com/Chapters/9781625791153/9781625791153___2.htm">Blood Music</a>, by Greg Bear (1983)</td></tr>
+		<tr><td>December 21, 2023</td><td><a href="https://archive.org/stream/Startling_Stories_v07n01_1942-01#page/n81/mode/2up">Christmas on Ganymede</a>, by Isaac Asimov (1942)</td></tr>
+		<tr><td>December 14, 2023</td><td><a href="https://www.tor.com/2012/07/20/a-tall-tail/">A Tall Tail</a>, Charles Stross (2012)</td></tr>
+		<tr><td>December 7, 2023</td><td><a href="https://future-sf.com/fiction/quality-time/">Quality Time</a>, by Ken Liu (2018)</td></tr>
+		<tr><td>November 30, 2023</td><td><a href="https://www.lightspeedmagazine.com/fiction/a-record-of-lost-time/">A Record of Lost Time</a> (陨时), by Regina Kangyu Wang (2022, author) / Rebecca F Kuang  (2023, translator)</td></tr>
+		<tr><td>November 23, 2023</td><td><b>All You Zombies</b>, by Robert A Heinlein (1959)</td></tr>
+		<tr><td>November 16, 2023</td><td><a href="https://talesofmytery.blogspot.com/2018/05/michael-swanwick-scherzo-with.html">Scherzo With Tyrannosaur</a>, by Michael Swanwick (1999)</td></tr>
+		<tr><td>November 9, 2023</td><td><a href="http://www.baen.com/Chapters/1416521364/1416521364___8.htm">Local Boy Makes Good</a> (2006) and <a href="https://escapepod.org/2011/12/02/ep321-honor-killing/">Honor Killing</a> (2011), by Ray Tabler</td></tr>
+		<tr><td>November 2, 2023</td><td><a href="https://clarkesworldmagazine.com/ha_08_23/">Window Boy</a>, by Thomas Ha (2023), and <a href="https://clarkesworldmagazine.com/djuna_09_23/">The People from the Dead Whale</a>, by Djuna (2020, author) / Jihyun Park & Gord Sellar (2023, translators)</td></tr>
+		<tr><td>October 26, 2023</td><td>Movie Night: <b>Alien</b> (1979)</td></tr>
+		<tr><td>October 19, 2023</td><td><a href="https://www.tor.com/2023/03/22/a-dream-of-electric-mothers-wole-talabi/">A Dream of Electric Mothers</a>, by Wole Talabi (2022)</td></tr>
+		<tr><td>October 12, 2023</td><td><a href="https://openlab.citytech.cuny.edu/?get_group_doc=22694/1540157347-HarlanEllison-IHaveNoMouthandIMustScream.pdf">I Have No Mouth, and I Must Scream</a>, by Harlan Ellison (1967)</td></tr>
+		<tr><td>October 5, 2023</td><td><a href="http://www.sfsfss.com/stories/Hugo_2006_Winner_Short_Story_-_David_D._Levine_-_Tk'tk'tk.htm">Tk'tk'tk</a>, by David D Levine (2006)</td></tr>
+		<tr><td>September 28, 2023</td><td><a href="https://maryrobinettekowal.com/journal/for-want-of-a-nail-is-a-hugo-nominee/">For Want of a Nail</a>, by Mary Robinette Kowal (2010)</td></tr>
+		<tr><td>September 14, 2023</td><td><a href="https://www.prosperosisle.org/spip.php?article864">Uncommon Sense</a>, by Hal Clement (1945)</td></tr>
+		<tr><td>September 10, 2023</td><td>Movie night: <b>Gattaca</b> (1997)</td></tr>
+		<tr><td>September 7, 2023</td><td><a href="https://archive.org/details/asimovsv29n12200512/page/n93/mode/1up">Diving Into the Wreck</a>, by Kristine Kathryn Rusch (2005)</td></tr>
+		<tr><td>August 31, 2023</td><td><b>Thunder and Roses</b>, by Theodore Sturgeon (1947)</td></tr>
+		<tr><td>August 24, 2023</td><td><a href="https://clarkesworldmagazine.com/han_06_23/">To Helen (致海伦)</a>, by Bella Han (白乐寒) (2019) </td></tr>
+		<tr><td>August 17, 2023</td><td><a href="https://bristolsf.files.wordpress.com/2016/04/the-belonging-kind-gibson-and-shirley.pdf">The Belonging Kind</a>, by William Gibson and John Shirley (1981) </td></tr>
+		<tr><td>August 10, 2023</td><td><b>Three Bodies at Mitanni</b>, by Seth Dickinson (2015) </td></tr>
+		<tr><td>August 3, 2023</td><td><b>Arena</b>, by Frederick Brown (1944) </td></tr>
+		<tr><td>July 29, 2023</td><td><a href="https://www.tor.com/2016/11/15/reprints-seven-birthdays-ken-liu/ ">Seven Birthdays</a>, by Ken Liu (2016) </td></tr>
+		<tr><td>July 22, 2023</td><td><a href="https://clarkesworldmagazine.com/tang_05_21/ ">Spore (孢子)</a>, by Tang Fei (糖匪) (2020, author) / Andy Dudak (2020, translator) </td></tr>
+		<tr><td>July 13, 2023</td><td><b>Burning Chrome</b>, by William Gibson (1982) </td></tr>
+		<tr><td>June 29, 2023</td><td>Movie night: Selected episodes from <b>The Twilight Zone</b> (1959-1962)</td></tr>
+		<tr><td>June 22, 2023</td><td><a href="https://cosmicrootsandeldritchshores.com/fiction-all/science-fiction/glory-whales/">Glory Whales</a>, by Marc A Criley (2020) </td></tr>
+		<tr><td>June 15, 2023</td><td><a href="https://www.gutenberg.org/files/37653/37653-h/37653-h.htm">Sentiment Inc</a>, by Poul Anderson (1953)</td></tr>
+		<tr><td>June 8, 2023</td><td><b>With Morning Comes Mistfall</b>, by George R R Martin (1973)</td></tr>
+		<tr><td>June 1, 2023</td><td><a href="https://galacticjourney.org/stories/1967,%2003%20(March),%20If.pdf">The Billiard Ball</a>, by Isaac Asimov (1967)</td></tr>
+		<tr><td>May 25, 2023</td><td><a href="https://www.neilgaiman.com/Cool_Stuff/Short_Stories/How_To_Talk_To_Girls_At_Parties/How_To_Talk_To_Girls_At_Parties_(Text)">How to Talk to Girls at Parties</a>, by Neil Gaiman (2006)</td></tr>
+		<tr><td>May 18, 2023</td><td><a href="https://www.gutenberg.org/cache/epub/62915/pg62915-images.html">And the Gods Laughed</a>, by Frederick Brown (1944)</td></tr>
+		<tr><td>May 11, 2023</td><td><b>The Sentinel</b>, by Arthur C Clarke (1951)</td></tr>
+		<tr><td>May 4, 2023</td><td><b>Voice of the Empire</b>, by Mur Lafferty (2017)</td></tr>
+		<tr><td>April 27, 2023</td><td><a href="https://www.baen.com/Chapters/0743498747/0743498747___2.htm">The Menace from Earth</a>, by Robert A Heinlein (1957)</td></tr>
+		<tr><td>April 20, 2023</td><td><a href="http://www.asimovs.com/wp-content/uploads/2023/02/Forty-eightMinutesCafe_Bennardo.pdf">Forty-Eight Minutes at the Trainview Café</a>, by M Bennardo (2022)</td></tr>
+		<tr><td>April 13, 2023</td><td><b>Learning to be Me</b>, by Greg Egan (1991)</td></tr>
+		<tr><td>April 6, 2023</td><td><a href="https://www.baen.com/Chapters/9781625791870/9781625791870___2.htm">Antibodies</a>, by Charles Stross (2000)</td></tr>
+		<tr><td>March 30, 2023</td><td><a href="https://clarkesworldmagazine.com/bao_09_15/">Preserve Her Memory</a>, by Bao Shu (2012, author) / Ken Liu (2015, translator)</td></tr>
+		<tr><td>March 23, 2023</td><td><a href="https://www.gutenberg.org/files/22541/22541-h/22541-h.htm">The Misplaced Battleship</a>, by Harry Harrison (1960)</td></tr>
+		<tr><td>March 16, 2023</td><td><a href="http://strangehorizons.com/fiction/you-me-her-you-her-i/">You, Me, Her, You, Her, I</a>, by Isabel J Kim (2022)</td></tr>
+		<tr><td>March 9, 2023</td><td><a href="https://www.gutenberg.org/cache/epub/62779/pg62779-images.html">The Moon Hoax</a>, by R A Locke (1835)</td></tr>
+		<tr><td>March 2, 2023</td><td><a href="http://www.baen.com/Chapters/0743498747/0743498747___5.htm">Black Destroyer</a>, by A E Van Vogt (1939)</td></tr>
+		<tr><td>February 23, 2023</td><td><a href="https://archive.org/details/Fantasy_Science_Fiction_v036n04_1969-04_PDF/page/n51/mode/1up">Not Long Before the End</a>, by Larry Niven (1969)</td></tr>
+		<tr><td>February 16, 2023</td><td><a href="https://escapepod.org/2013/01/03/ep377-real-artists/">Real Artists</a>, by Ken Liu (2011)</td></tr>
+		<tr><td>February 9, 2023</td><td><a href="https://www.uncannymagazine.com/article/lily-the-immortal/">Lily, the Immortal</a>, by Kylie Lee Baker (2022)</td></tr>
+		<tr><td>February 2, 2023</td><td><b>Wandering Earth 2</b> (Movie, 2023) / <b>Three Body</b> (TV series, 2023)</td></tr>
+		<tr><td>January 19, 2023</td><td><a href="https://web.archive.org/web/20140106031332/https://subterraneanpress.com/magazine/winter_2014/bit_players_by_greg_egan">Bit Players</a>, by Greg Egan (2014)</td></tr>
+		<tr><td>January 12, 2023</td><td><a href="https://sffshortstories.com/?entry=entry190822-123201">Incorruptible</a>, by Peter Watts (2017)</td></tr>
+		<tr><td>January 5, 2023</td><td><a href="https://varley.net/excerpt/the-phantom-of-kansas-full-text/">The Phantom of Kansas</a>, by John Varley (1976)</td></tr>
+		<tr><td>December 29, 2022</td><td><a href="https://clarkesworldmagazine.com/melcer_07_21/">The Falling</a>, by MV Melcer (2021)</td></tr>
+		<tr><td>December 22, 2022</td><td><a href="https://www.tor.com/2009/12/22/overtime/">Overtime</a>, by Charles Stross (2009)</td></tr>
+		<tr><td>December 15, 2022</td><td><a href="https://clarkesworldmagazine.com/larson_11_18/">Octo-Heist in Progress</a>, by Rich Larson (2018)</td></tr>
+		<tr><td>December 1, 2022</td><td><a href="https://www.tor.com/2022/09/21/quandary-aminu-vs-the-butterfly-rich-larson-man/">Quandary Aminu vs The Butterfly Man</a>, by Rich Larson (2022)</td></tr>
+		<tr><td>November 24, 2022</td><td><a href="https://clarkesworldmagazine.com/goodman_07_22/">Carapace</a>, by David Goodman (2022)</td></tr>
+		<tr><td>November 17, 2022</td><td><a href="https://www.torforgeblog.com/2021/11/17/excerpt-worlds-of-exile-and-illusion-by-ursula-k-le-guin/">The Dowry of Angyar</a> (aka <b>The Necklace</b>), by Ursula K Le Guin (1964)</td></tr>
+		<tr><td>November 10, 2022</td><td><a href="https://www.gutenberg.org/files/28767/28767-h/28767-h.htm">The Defenders</a>, by Philip K Dick (1953)</td></tr>
+		<tr><td>November 3, 2022</td><td><a href="https://archive.org/stream/Astounding_v41n01_1948-03_UnkSc-cape1736#page/n119/mode/2up">The Endochronic Properties of Resublimated Thiotimeoline</a> and <a href="https://archive.org/details/Astounding_v52n04_1953-12_dtsg0318/page/n105/mode/2up">The Micropsychiatric Applications of Thiotimeoline</a>, by Isaac Asimov (1948 / 1953)</td></tr>
+		<tr><td>October 27, 2022</td><td><b>Understand</b>, by Ted Chiang (1993)</td></tr>
+		<tr><td>October 20, 2022</td><td><a href="https://clarkesworldmagazine.com/oreilly_08_22/">Pollatomish</a>, by Finnbar O'Reilly (2022)</td></tr>
+		<tr><td>October 13, 2022</td><td><a href="https://www.baen.com/Chapters/1439133093/1439133093___5.htm">The Butcher's Bill</a>, by David Drake (1974)</td></tr>
+		<tr><td>October 6, 2022</td><td><a href="https://www.nature.com/articles/519498a">Asymmetrical Warfare</a>, by S R Algernon (2015), and <a href="https://clarkesworldmagazine.com/jurado_06_21/">Embracing the Movement</a>, by Cristina Jurado (2020, author) / Sue Burke (2021, translator)</td></tr>
+		<tr><td>September 29, 2022</td><td><a href="https://www.lightspeedmagazine.com/fiction/exhalation/">Exhalation</a>, by Ted Chiang (2008), and <a href="https://www.physics.princeton.edu/ph115/LQ.pdf">The Last Question</a>, by Isaac Asimov (1956)</td></tr>
+		<tr><td>September 22, 2022</td><td><a href="https://philosophy.as.uky.edu/sites/default/files/We%20Can%20Remember%20It%20for%20You%20Wholesale%20-%20Philip%20K.%20Dick.pdf">We Can Remember It For You Wholesale</a>, by Philip K Dick (1966)</td></tr>
+		<tr><td>September 15, 2022</td><td><a href="http://www.baen.com/chapters/W200011/0671319744___1.htm">Melancholy Elephants</a>, by Spider Robinson (1982), and <a href="https://archiveofourown.org/works/41112099">Eager Readers in Your Area</a>, by Alexander Wales (2022)</td></tr>
+		<tr><td>September 8, 2022</td><td><a href="https://www.uncannymagazine.com/article/where-oaken-hearts-do-gather/">Where Oaken Hearts Do Gather</a>, by Sarah Pinsker (2021)</td></tr>
+		<tr><td>September 1, 2022</td><td><a href="https://windupstories.com/books/pump-six-and-other-stories/the-tamarisk-hunter/">The Tamarisk Hunter</a>, by Paolo Bacigalupi (2006)</td></tr>
+		<tr><td>August 25, 2022</td><td><a href="http://strangehorizons.com/fiction/the-destination-star/">The Destination Star</a>, by Gregory Marlow (2022)</td></tr>
+		<tr><td>August 18, 2022</td><td><a href="https://clarkesworldmagazine.com/xiu_07_22/">The Strange Girl</a>, by Xiu Xinyu (2021, author) / Emily Jin (2022, translator) (with the author)</td></tr>
+		<tr><td>August 11, 2022</td><td><a href="https://www.fadedpage.com/books/20181026/html.php">Scanners Live in Vain</a>, by Cordwainer Smith (1950)</td></tr>
+		<tr><td>August 4, 2022</td><td><a href="https://archiveofourown.org/works/17356235">Instruments of Destruction</a>, by Alexander Wales, and <b>The Sith of Datawork</b>, by Ken Liu</td></tr>
+		<tr><td>July 28, 2022</td><td><b>New Rose Hotel</b>, by William Gibson</td></tr>
+		<tr><td>July 21, 2022</td><td><a href="https://clarkesworldmagazine.com/kritzer_03_22/">The Dragon Project</a>, by Naomi Kritzer</td></tr>
+		<tr><td>July 14, 2022</td><td><b>Beyond the Aquila Rift</b>, by Alastair Reynolds</td></tr>
+		<tr><td>July 7, 2022</td><td><a href="https://www.scifiwright.com/2018/11/guest-law/">Guest Law</a>, by John C Wright</td></tr>
+		<tr><td>June 30, 2022</td><td><a href="https://www.tor.com/2010/02/03/vilcabamba/">Vilcabamba</a>, by Harry Turtledove</td></tr>
+		<tr><td>June 23, 2022</td><td><a href="https://clarkesworldmagazine.com/cole_01_22/">The Five Rules of Supernova Surfing, or a For Real Solution to the Fermi Paradox, Bro</a>, by Geoffrey W Cole</td></tr>
+		<tr><td>June 16, 2022</td><td><b>Unaccompanied Sonata</b>, by Orson Scott Card</td></tr>
+		<tr><td>June 9, 2022</td><td><b>Swarm</b>, by Bruce Sterling</td></tr>
+		<tr><td>May 26, 2022</td><td><b>Hothouse</b>, by Brian Aldiss, and <a href="https://www.bilibili.com/video/BV1KW411Z7hn">Aurelia</a> (video documentary)</td></tr>
+		<tr><td>May 19, 2022</td><td><b>Inconstant Moon</b>, by Larry Niven</td></tr>
+		<tr><td>May 12, 2022</td><td><a href="https://zalbert.net/shorts/envoy.html">Envoy</a>, by Albert Z Bell, and <a href="https://www.lightspeedmagazine.com/fiction/valedictorian/">Valedictorian</a>, by N K Jemisin</td></tr>
+		<tr><td>May 5, 2022</td><td><a href="https://clarkesworldmagazine.com/liu_10_11/">Staying Behind</a>, by Ken Liu</td></tr>
+		<tr><td>April 28, 2022</td><td><b>The Village Teacher</b> (<b>鄉村教師</b>), by Liu Cixin (刘慈欣)</td></tr>
+		<tr><td>April 21, 2022</td><td><a href="https://www.gregegan.net/MISC/RUINS/Ruins.html">In the Ruins</a>, by Greg Egan, and <a href="https://mythaxis.co.uk/issue-27/full-metal-grandma.html">Full Metal Grandma</a>, by Paul Alex Gray</td></tr>
+		<tr><td>April 14, 2022</td><td><b>Writing with GPT-3</b></td></tr>
+		<tr><td>April 9, 2022</td><td><a href="http://www.infinityplus.co.uk/stories/blit.htm">BLIT</a>, by David Langford, and <a href="https://www.lightspeedmagazine.com/fiction/different-kinds-of-darkness/">Different Kinds of Darkness</a>, by David Langford</td></tr>
+		<tr><td>March 31, 2022</td><td><a href="https://clarkesworldmagazine.com/nayler_09_21/">Yesterday's Wolf</a>, by Ray Nayler</td></tr>
+		<tr><td>March 24, 2022</td><td><a href="https://www.analogsf.com/assets/6/6/Heart-Stone_Jolly.pdf">Heart of Stone</a>, by Tom Jolly</td></tr>
+		<tr><td>March 17, 2022</td><td><a href="https://clarkesworldmagazine.com/levine_05_21/">Best-Laid Plans</a>, by David D Levine</td></tr>
+		<tr><td>March 10, 2022</td><td><a href="https://www.wired.com/story/future-of-work-placebo-charles-yu/">Placebo</a>, by Charles Yu, <a href="https://qntm.org/frame">Frame by Frame</a>, by Sam "qntm" Hughes, and <a href="https://www.analogsf.com/assets/6/6/Room-Live_Vibbert.pdf">Room to Live</a>, by Marie Vibbert, </td></tr>
+		<tr><td>March 6, 2022</td><td><b>Project Hail Mary (Chapters 21-end)</b>, by Andy Weir</td></tr>
+		<tr><td>February 26, 2022</td><td><b>Project Hail Mary (Chapters 11-20)</b>, by Andy Weir</td></tr>
+		<tr><td>February 17, 2022</td><td><b>Project Hail Mary (Chapters 1-10)</b>, by Andy Weir</td></tr>
+		<tr><td>February 10, 2022</td><td><b>Les Mortes d'Arthur</b>, by Harry Turtledove</td></tr>
+		<tr><td>January 27, 2022</td><td><b>Writing our own sci-fi</b></td></tr>
+		<tr><td>January 20, 2022</td><td><a href="https://www.baen.com/Chapters/0671878522/0671878522___1.htm">A Walk In The Sun</a>, by Geoffrey A. Landis</td></tr>
+		<tr><td>January 13, 2022</td><td><a href="http://alicorn.elcenia.com/stories/starwink.shtml">Starwink</a>, by Alicorn</td></tr>
+		<tr><td>January 7, 2022</td><td><a href="https://uncannymagazine.com/article/metal-like-blood-in-the-dark/">Metal Like Blood in the Dark</b>, by T Kingfisher</td></tr>
+		<tr><td>December 17, 2021</td><td><b>Bridesicle</b>, by Will McIntosh</td></tr>
+		<tr><td>December 9, 2021</td><td><a href="https://www.depauw.edu/sfs/backissues/80/labare80art.htm">The Future: 'Wrapped in That Mysterious Japanese Way'</a>, by Joshua La Bare</td></tr>
+		<tr><td>November 25, 2021</td><td><a href="https://clarkesworldmagazine.com/nelson-wahls_11_20/">The Murders of Jason Hartman</a>, by Jamie Wahls, and <a href="https://www.nature.com/articles/35014679">Catching Crumbs from the Table</a>, by Ted Chiang</td></tr>
+		<tr><td>November 18, 2021</td><td><b>Learning to be Me</b>, by Greg Egan, and <b>The Whispering Earring</b>, by Scott Alexander</td></tr>
+		<tr><td>November 11, 2021</td><td><a href="https://www.nature.com/articles/d41586-021-02769-z">Byzantium</a>, by Robert Dawson</td></tr>
+		<tr><td>November 4, 2021</td><td><b>Dune</b>, by Frank Herbert</td></tr>
+		<tr><td>October 28, 2021</td><td><a href="http://clarkesworldmagazine.com/xia_02_12/">A Hundred Ghosts Parade Tonight</a> (<b>百鬼夜行街</b>), by Xia Jia (夏笳)</td></tr>
+		<tr><td>October 21, 2021</td><td><b>Who Goes There</b>, by John W. Campbell, and <a href="http://clarkesworldmagazine.com/watts_01_10/">The Things</a>, by Peter Watts</td></tr>
+		<tr><td>October 14, 2021</td><td><a href="https://slate.com/technology/2018/10/burned-over-territory-universal-basic-income-story.html">Burned Over Territory</a>, by Lee Konstantinou</td></tr>
+		<tr><td>October 7, 2021</td><td><a href="https://www.tor.com/2020/03/17/a-guide-for-working-breeds-vina-jie-min-prasad/comment-page-1/">A Guide for Working Breeds</a>, by Vina Jie-Min Prasad</td></tr>
+		<tr><td>September 30, 2021</td><td><a>A Scanner Darkly (film)</a>, and <a href="https://dailysciencefiction.com/science-fiction/future-societies/jamie-wahls/a-kept-species">A Kept Species</a>, by Jamie Wahls</td></tr>
+		<tr><td>September 23, 2021</td><td><a href="https://www.gutenberg.org/files/28554/28554-h/28554-h.htm">Beyond Lies the Wub</a>, by Philip K. Dick</td></tr>
+		<tr><td>September 16, 2021</td><td><a>Star Trek: The Next Generation - "First Contact" [S4 E15]</a>, and <a href="https://www.gutenberg.org/ebooks/24104">The Aliens</a>, by Murray Leinster</td></tr>
+		<tr><td>September 9, 2021</td><td><a>Hell is the Absence of God</a>, by Ted Chiang, and <a href="https://kenliu.name/stories/single-bit-error/">Single Bit Error</a>, by Ken Liu</td></tr>
+		<tr><td>September 2, 2021</td><td><b>The Tea Master and the Detective</b>, by Aliette de Bodard</td></tr>
+		<tr><td>August 19, 2021</td><td><a href="https://www.baen.com/Chapters/0743498747/0743498747___4.htm">Hunting Problem</a>, by Robert Sheckley</td></tr>
+		<tr><td>August 12, 2021</td><td><b>Holodeck episode parodies:</b> Rick and Morty: "M. Night Shaym-Aliens!" [S1E4]; Red Dwarf: "Gunmen fo the Apocalypse" [S6E3]; Extra Credit: Any Star Trek holodeck episode (ex. DS9: 'Our Man Bashir' [S4E9])</td></tr>
+		<tr><td>August 5, 2021</td><td><a href="https://windupstories.com/books/pump-six-and-other-stories/people-of-sand-and-slag/">The People of Sand and Slag</a>, by Paulo Pacigalupi</td></tr>
+		<tr><td>July 29, 2021</td><td><a href="https://clarkesworldmagazine.com/le_guin_03_14_reprint/">Mountain Ways</a>, by Ursula K. Le Guin</td></tr>
+		<tr><td>July 22, 2021</td><td><b>We write our own scifi in 1 hr</b>, prompt given at session</td></tr>
+		<tr><td>July 15, 2021</td><td><b>Hyperion - Chapter 6</b>, by Dan Simmons</td></tr>
+		<tr><td>July 8, 2021</td><td><b>Hyperion - Chapter 5</b>, by Dan Simmons</td></tr>
+		<tr><td>July 1, 2021</td><td><b>Hyperion - Chapters 3-4</b>, by Dan Simmons</td></tr>
+		<tr><td>June 24, 2021</td><td><b>Hyperion - Chapter 2</b>, by Dan Simmons</td></tr>
+		<tr><td>June 15, 2021</td><td><b>Hyperion - Chapter 1</b>, by Dan Simmons</td></tr>
+		<tr><td>June 8, 2021</td><td><a href="https://www.shortstoryproject.com/story/none-so-blind/">None So Blind</a>, by Joe Haldeman</td></tr>
+		<tr><td>June 3, 2021</td><td><a href="https://www.baen.com/Chapters/0671878522/0671878522___2.htm">Gold</a>, by Isaac Asimov</td></tr>
+		<tr><td>May 27, 2021</td><td><a href="https://www.reddit.com/r/HFY/comments/ncmv8i/pi_humans_are_seen_by_the_galaxy_as_the_unnerving/">Did I Ever You About the Time I Got Invited to Hell?</a>, by ack1308</td></tr>
+		<tr><td>May 20, 2021</td><td><a href="https://marshallbrain.com/manna1">Manna: Two Views of Humanity's Future, Chapters 1-4</a>, by Marshall Brain</td></tr>
+		<tr><td>May 13, 2021</td><td><b>Publicity Campaign</b>, by Arthur C. Clarke</td></tr>
+		<tr><td>May 6, 2021</td><td><b>The End of Summer</b>, by Algis Budrys</td></tr>
+		<tr><td>April 29, 2021</td><td><a href="https://qntm.org/godmode">God Mode</a>, by Sam "qntm" Hughes, and extra credit: <a href="https://qntm.org/person">cripes does anybody remember Google People [sic]</a>, by Sam "qntm" Hughes</td></tr>
+		<tr><td>April 22, 2021</td><td><a href="https://qntm.org/mmacevedo">Lena</a>, by Sam "qntm" Hughes</td></tr>
+		<tr><td>April 15, 2021</td><td><b>Paradises Lost</b>, by Ursula K Le Guin</td></tr>
+		<tr><td>April 8, 2021</td><td><a href="http://clarkesworldmagazine.com/dayle_06_20/">Own Goal</a>, by Dennard Dayle, and <a href="http://strangehorizons.com/fiction/truth/">Truth Plus</a>, by Jamie Wahls </td></tr>
+		<tr><td>April 1, 2021</td><td><a href="https://www.douban.com/group/topic/43140607/">Jeffty Is Five</a>, by Harlan Ellison</td></tr>
+		<tr><td>March 25, 2021</td><td><a href="https://uncannymagazine.com/article/laws-of-impermanence/">Laws of Impermanence</a>, by Kenneth Schneyer</td></tr>
+		<tr><td>March 11, 2021</td><td><a href="https://slate.com/technology/2021/02/the-void-leigh-alexander-short-story.html">The Void</a>, by Leigh Alexander</td></tr>
+		<tr><td>March 4, 2021</td><td><a href="https://www.reddit.com/r/hfy/wiki/series/first_contact_ralts_bloodthorne">First Contact</a> (up to Part 6), by Ralts_Bloodthorne</td></tr>
+		<tr><td>February 25, 2021</td><td><b>Sandkings</b>, by George R. R. Martin</td></tr>	
+		<tr><td>February 18, 2021</td><td><a href="https://zerohplovecraft.wordpress.com/2020/09/06/key-performance-indicators/">Key Performance Indicators</a>, by Zero HP Lovecraft</td></tr>
+		<tr><td>February 11, 2021</td><td><a href="https://www.antipope.org/charlie/blog-static/fiction/accelerando/accelerando.html#Troubadour">Accelerando</a> (Chapter 2), by Charles Stross</td></tr>
+		<tr><td>February 4, 2021</td><td><b>Writing week (theme: Festivals)</b> - short stories by club members</td></tr>
+		<tr><td>January 28, 2021</td><td><b>Writing week (theme: Festivals)</b> - discussing ideas and concepts</td></tr>
+		<tr><td>January 21, 2021</td><td><a href="https://www.antipope.org/charlie/blog-static/fiction/accelerando/accelerando.html#PART1">Accelerando</a> (Chapter 1), by Charles Stross</td></tr>
+		<tr><td>January 14, 2021</td><td><b>The Matrix: Reloaded</b> and <b>The Matrix: Revolutions</b> (movies)</td></tr>
+		<tr><td>January 7, 2021</td><td><b>The Matrix</b> (movie)</td></tr>
+		<tr><td>December 30, 2020</td><td><b>Predictions for the next 20 years</b> (discussion)</td></tr>
+		<tr><td>December 17, 2020</td><td><a href="http://clarkesworldmagazine.com/nelson-wahls_11_20/">The Murders of Jason Hartman</a>, by Brandy Nelson and Jamie Wahls</td></tr>
+		<tr><td>December 10, 2020</td><td><a href="https://www.baen.com/Chapters/1596061958/1596061958___8.htm">Lighthouse</a> and <a href="http://www.sfsfss.com/stories2/Cool-Neighbor.pdf">Cool Neighbor</a>, by Jack McDevitt and Michael Shara</td></tr>
+		<tr><td>November 26, 2020</td><td><a href="http://www.lightspeedmagazine.com/fiction/the-crystal-spheres/">The Crystal Spheres</a>, by David Brin</td></tr>
+		<tr><td>November 19, 2020</td><td><a href="http://compellingsciencefiction.com/stories/two-moons.html">Two Moons</a>, by Elena Pavlova, and <a href="https://www.tor.com/2019/01/14/karin-tidbeck-the-last-voyage-of-skidbladnir/">The Last Voyage of Skidbladnir</a>, by Karin Tidbeck</td></tr>
+		<tr><td>November 5, 2020</td><td><a href="https://uncannymagazine.com/article/laws-of-impermanence/">Laws of Impermanence</a>, by Kenneth Schneyer</td></tr>
+		<tr><td>October 29, 2020</td><td><a href="http://clarkesworldmagazine.com/bao_01_18/">The Lighthouse Girl</a> (<a href="https://www.sohu.com/a/279370980_661366">灯塔少女</a>), by Bao Shu</td></tr>
+		<tr><td>October 22, 2020</td><td><a href="http://clarkesworldmagazine.com/egan_10_20/">You and Whose Army?</a>, by Greg Egan</td></tr>
+		<tr><td>October 15, 2020</td><td><a href="http://clarkesworldmagazine.com/lindholm_01_16_reprint/">Old Paint</a>, by Megan Lindholm</td></tr>
+		<tr><td>October 8, 2020</td><td><a href="https://qntm.org/transit">Valuable Humans in Transit</a>, by Sam "qntm" Hughes, and <a href="http://www.avatars.inc/future_ideas/2033">La Mer Donne</a>, by Sarah Pinsker</td></tr>
+		<tr><td>September 24, 2020</td><td><b>Writing week (theme: Venus)</b> - short stories by club members</td></tr>
+		<tr><td>September 17, 2020</td><td><b>The Merchant and the Alchemist's Gate</b>, by Ted Chiang</td></tr>
+		<tr><td>September 10, 2020</td><td><a href="http://compellingsciencefiction.com/stories/housefly-tours.html ">Housefly Tours</a>, by Steve Rogers</td></tr>
+		<tr><td>September 3, 2020</td><td><a href="http://clarkesworldmagazine.com/xia_05_19/">Tick Tock</a> (<a href="https://m.douban.com/note/521198726/">滴答</a>), by Xia Jia (夏笳)</td></tr>
+		<tr><td>August 27, 2020</td><td><a href="https://www.tabletmag.com/sections/arts-letters/articles/on-venus-have-we-got-a-rabbi">On Venus, Have We Got A Rabbi!</a>, by William Tenn</td></tr>
+		<tr><td>August 20, 2020</td><td><a href="https://slate.com/technology/2019/11/future-tense-fiction-priest-rabbi-robot-bar-andrew-hudson.html">A Priest, a Rabbi, and a Robot Walk Into a Bar</a>, by Andrew Dana Hudson</td></tr>
+		<tr><td>August 13, 2020</td><td><a href="https://www.gregegan.net/QUARANTINE/Excerpt/QuarantineExcerpt.html">Quarantine</a>, by Greg Egan (Excerpt)</td></tr>
+		<tr><td>August 6, 2020</td><td><a href="https://www.you-books.com/book/J-H-Vance/The-Moon-Moth">The Moon Moth</a>, by Jack Vance</td></tr>
+		<tr><td>July 30, 2020</td><td><a href="http://www.dream-ware.co.uk/frontier/books/stories-of-life-on-the-frontier/all-that-glisters/">All That Glisters</a>, by David Massey, <a href="http://www.dream-ware.co.uk/first-encounters/books/further-stories-of-life-on-the-frontier/inevitable-consequences/">Inevitable Consequences</a>, by Moira Sheehan, and <a href="http://www.dream-ware.co.uk/frontier/books/stories-of-life-on-the-frontier/when-a-plan-works-well/">When A Plan Works Well</a>, by David Massey</td></tr>
+		<tr><td>July 23, 2020</td><td><b>Snow Crash (Chapters 37-38)</b>, by Neal Stephenson</td></tr>
+		<tr><td>July 16, 2020</td><td><a href="http://web.archive.org/web/20140906221534/http://cosmosmagazine.com/science-fiction/tenure-track/">Tenure Track</a>, by Kenneth Schneyer</td></tr>
+		<tr><td>July 9, 2020</td><td><a href="http://www.sfsfss.com/stories2/zima%20blue.pdf">Zima Blue</a>, by Alastair Reynolds</td></tr>
+		<tr><td>July 2, 2020</td><td><a href="https://mythicdelirium.com/mythic-delirium-magazine/mythic-delirium-0-3-jan-march-2014/featured-story-%e2%80%a2-february-2014">Levels of Observation</a>, by Kenneth Schneyer</td></tr>
+		<tr><td>June 25, 2020</td><td><a href="https://uncannymagazine.com/article/fandom-for-robots/">Fandom for Robots</a>, by Vina Jie-Min Prasad, and <a href="http://clarkesworldmagazine.com/kritzer_01_15/">Cat Pictures Please</a>, by Naomi Kritzer</td></tr>
+		<tr><td>June 18, 2020</td><td><a href="http://www.davidbrin.com/fiction/givingplague.html">The Giving Plague</a>, by David Brin</td></tr>
+		<tr><td>June 11, 2020</td><td><b>Joy</b>, by Kevin Aslan</td></tr>
+		<tr><td>June 4, 2020</td><td><a href="https://www.tor.com/2019/02/06/articulated-restraint-mary-robinette-kowal/">Articulated Restraint</a>, by Mary Robinette Kowal</td></tr>
+		<tr><td>May 28, 2020</td><td><a href="https://www.tor.com/2010/08/11/the-fermi-paradox-is-our-business-model/">The Fermi Paradox Is Our Business Model</a>, by Charlie Jane Anders, and <a href="http://www.baen.com/Chapters/0743498747/0743498747___1.htm/">Rescue Party</a>, by Arthur C. Clarke</td></tr>
+		<tr><td>May 21, 2020</td><td><a href="http://clarkesworldmagazine.com/wang_05_20/">The Language Sheath</a>, by Regina Kanyu Wang (with the author)</td></tr>
+		<tr><td>May 14, 2020</td><td><a href="https://slatestarcodex.com/2020/03/30/legal-systems-very-different-from-ours-because-i-just-made-them-up/">Legal Systems Very Different From Ours (Because I Just Made Them Up)</a> (Parts 6-7), by Scott Alexander</td></tr>
+		<tr><td>May 7</td><td><a href="https://robinhanson.typepad.com/files/three-worlds-collide.pdf">Three Worlds Collide</a>, by Eliezer Yudkowsky</td></tr>
+		<tr><td>April 30, 2020</td><td><a href="http://www.lightspeedmagazine.com/fiction/invisible-planets/">Invisible Planets</a>, by Hao Jingfang</td></tr>
+		<tr><td>April 23, 2020</td><td><a href="https://slatestarcodex.com/2020/03/30/legal-systems-very-different-from-ours-because-i-just-made-them-up/">Legal Systems Very Different From Ours (Because I Just Made Them Up)</a> (Parts 4-5), by Scott Alexander</td></tr>
+		<tr><td>April 16, 2020</td><td><a href="https://slatestarcodex.com/2020/03/30/legal-systems-very-different-from-ours-because-i-just-made-them-up/">Legal Systems Very Different From Ours (Because I Just Made Them Up)</a> (Parts 1-3), by Scott Alexander</td></tr>
+		<tr><td>April 9, 2020</td><td><b>The Matter of Seggri</b>, by Ursula K Le Guin</td></tr>
+		<tr><td>April 4, 2020</td><td><a href="http://clarkesworldmagazine.com/valente_08_12/">Fade to Black</a>, by Catherynne M Valente</td></tr>
+		<tr><td>March 25, 2018</td><td><b>Book report evening (continued)</b> - choose a book you enjoyed</td></tr>
+		<tr><td>March 22, 2018</td><td><b>Book report evening</b> - choose a book you enjoyed</td></tr>
+		<tr><td>March 19, 2020</td><td><a href="https://urbigenous.net/library/power.html">The Feeling of Power</a>, by Isaac Asimov, and <a href="https://urbigenous.net/library/nine_billion_names_of_god.html">the Nine Billion Names of God</a>, by Arthur C. Clarke</td></tr>
+		<tr><td>March 12, 2020</td><td><b>For A Breath I Tarry</b>, by Roger Zelazny</td></tr>
+		<tr><td>March 8, 2020</td><td><a href="https://bobson.ludost.net/hugoawardnominees/2008/tideline.html">Tideline</a>, by Elizabeth Bear</td></tr>
+		<tr><td>March 5, 2020</td><td><a href="https://www.tor.com/2008/12/17/firstborn/">Firstborn</a>, by Brandon Sanderson</td></tr>
+		<tr><td>February 27, 2020</td><td><a href="https://www.kit.ntnu.no/sites/www.kit.ntnu.no/files/Philip%20K.%20Dick%20-%20The%20Electric%20Ant.pdf">The Electric Ant</a>, by Philip K Dick</a></td></tr>
+		<tr><td>February 23, 2020</td><td><a href="http://scp-wiki.wikidot.com/the-bard-of-ambrose">The Bard of Ambrose</a>, <a href="http://scp-wiki.wikidot.com/scp-2897">SCP 2897</a>, and <a href="http://scp-wiki.wikidot.com/scp-2820">SCP 2820</a>, by SCP Foundation</td></tr>
+		<tr><td>February 20, 2020</td><td><a href="https://www.ele.uri.edu/faculty/vetter/Other-stuff/The-Machine-Stops.pdf">The Machine Stops</a>, by E. M. Forster</td></tr>
+		<tr><td>February 13, 2020</td><td><a href="http://gregstolze.com/wp-content/uploads/2018/02/Failworlds.zip">Failworlds</a>, by Greg Stolze</td></tr>
+		<tr><td>February 6, 2020</td><td><a href="https://www.atomic-robo.com/atomicrobo/v3ch1-cover">The Shadow from Beyond Time (Atomic Robo Volume 3)</a> (comic)</td></tr>
+		<tr><td>February 4, 2020</td><td><a href="https://qntm.org/responsibility">I don't know, Timmy, being God is a big responsibility</a>, by Sam "qntm" Hughes</td></tr>
+		<tr><td>February 2, 2020</td><td><a href="https://www.tor.com/2019/10/23/as-the-last-i-may-know-s-l-huang/">As the Last I May Know</a>, by S L Huang</td></tr>
+		<tr><td>January 16, 2020</td><td><a href="http://clarkesworldmagazine.com/xia_09_14/">Spring Festival: Happiness, Anger, Love, Sorrow, Joy</a>, by Xia Jia</td></tr>
+		<tr><td>January 9, 2020</td><td><a href="https://archive.org/details/SATISFACTIONGUARANTEEDByIsaacAsimov">Satisfaction Guaranteed</a>, <a href="http://www.angelfire.com/weird/ektomage/otherwriting/bard.html">The Immortal Bard</a>, <a href="http://www.e-reading.club/chapter.php/81838/12/Azimov_-_The_Complete_Robot.html">Victory Unintentional</a>, and <a href="https://nyc3.digitaloceanspaces.com/sffaudio-usa/usa-pdfs/TheJokesterByIsaacAsimov.pdf">Jokester</a>, by Isaac Asimov, and <a href="http://www.slate.com/articles/technology/future_tense/2016/04/mika_model_a_new_short_story_from_paolo_bacigalupi.html">Mika Model</a>, by Paolo Bacigalupi</td></tr>
+		<tr><td>January 2, 2020</td><td><a href="http://www.scp-wiki.net/in-the-clutches-of-life">In the Clutches of Life</a>, <a href="http://www.scp-wiki.net/scp-3984">SCP 3984</a>, and <a href="http://www.scp-wiki.net/scp-3448">SCP 3448</a>, by SCP Foundation</td></tr>
+		<tr><td>December 26, 2019</td><td><a href="https://www.sdfo.org/gj/stories/flowersforalgernon.pdf">Flowers for Algernon</a>, by Daniel Keyes</td></tr>
+		<tr><td>December 19, 2019</td><td><a href="http://web.archive.org/web/20040506062428/http://www.asimovs.com/_issue_0406/liketheonesweusedtono.shtml">Just Like The Ones We Used to Know</a>, by Connie Willis</td></tr>
+		<tr><td>December 12, 2019</td><td><a href="http://www.castofwonders.org/2019/09/cast-of-wonders-372-little-wonders-22-fantasyworldproblems/">Fantasy world problems</a>, featuring <b>Whatever the Price</b>, by Matthew Bailey, <b>The Supervisor of Accountants and the Great Grey Wolf</b>, by Donald Crankshaw, and <b>An Evil Opportunity Employer</b>, by Lawrence Watt-Evans, plus <a href="https://yudkowsky.tumblr.com/post/188572976735/mirasorastone-yudkowsky-prokopetz-bad">The Masculine Mongoose</a>, by Eliezer Yudkowsky</a>, and <b>The Sith of Datawork</b>, by Ken Liu</td></tr>
+		<tr><td>December 5, 2019</td><td><a href="https://www.technologyreview.com/s/408858/steve-fever/">Steve Fever</a>, by Greg Egan</td></tr>
+		<tr><td>November 28, 2019</td><td><a href="https://www.newyorker.com/magazine/2003/01/27/jon">Jon</a>, by George Saunders</td></tr>
+		<tr><td>November 21, 2019</td><td><a href="http://www.gutenberg.org/ebooks/19445">Omnilingual</a>, by H Beam Piper</td></tr>
+		<tr><td>November 14, 2019</td><td><a href="https://www.tor.com/2013/09/11/the-lady-astronaut-of-mars/">The Lady Astronaut of Mars</a>, by Mary Robinette Kowal (continued from previous week), plus <a href="http://maryrobinettekowal.com/journal/45th-birthday-short-story-party-favour/">We Interrupt This Broadcast </a>, by Mary Robinette Kowal, and <a href="http://clarkesworldmagazine.com/kelly_09_13/">The Promise of Space</a>, by James Patrick Kelly</td></tr>
+		<tr><td>November 7, 2019</td><td><a href="https://www.tor.com/2013/09/11/the-lady-astronaut-of-mars/">The Lady Astronaut of Mars</a>, by Mary Robinette Kowal</td></tr>
+		<tr><td>October 31, 2019</td><td><a href="http://www.scp-wiki.net/scp-3008">SCP 3008</a> and <a href="http://www.scp-wiki.net/scp-2000">SCP 2000</a>, by SCP Foundation </td></tr>
+		<tr><td>October 24, 2019</td><td><a href="https://www.tor.com/2019/09/25/zeitgeber-greg-egan/">Zeitgeber</a>, by Greg Egan</td></tr>
+		<tr><td>October 17, 2019</td><td><a href="http://www.cwanderson.org/wp-content/uploads/2011/11/Philip-K-Dick-The-Minority-Report.pdf">The Minority Report</a>, by Philip K Dick</td></tr>
+		<tr><td>October 10, 2019</td><td><a href="http://crystal.raelifin.com/download/">Crystal Society</a> (long read), by Max Harms</td></tr>
+		<tr><td>October 3, 2019</td><td><a href="https://www.tor.com/2018/07/11/the-last-banquet-of-temporal-confections-tina-connolly/">The Last Banquet of Temporal Confections</a>, by Tina Connolly</td></tr>
+		<tr><td>September 26, 2019</td><td><b>Hinterlands</b> and <a href="http://wintermute10.tripod.com/Gibson.htm">Johnny Mnemonic</a>, by William Gibson</td></tr>
+		<tr><td>September 19, 2019</td><td><a href="http://www.sfsfss.com/stories2/the-woman-who-destroyed-us.html">The Woman Who Destroyed Us</a>, by S L Huang, and <b>Axiomatic</b>, by Greg Egan</td></tr>
+		<tr><td>September 12, 2019</td><td><a href="http://www.beneath-ceaseless-skies.com/stories/carnival-nine/">Carnival Nine</a>, by Caroline M Yoachim, and <a href="https://www.lightspeedmagazine.com/fiction/exhalation/">Exhalation</a>, by Ted Chiang</td></tr>
+		<tr><td>September 5, 2019</td><td><a href="http://strangehorizons.com/fiction/truth/">Truth Plus</a>, by Jamie Wahls</td></tr>
+		<tr><td>August 29, 2019</td><td><a href="http://www.sfsfss.com/stories/Blish,%20James%20-%20%5bNovelette%5d%20Surface%20Tension%20%5bv1.0%5d.htm">Surface Tension</a>, by James Blish</td></tr>
+		<tr><td>August 22, 2019</td><td><a href="https://go.xprize.org/oceanstories/poems-and-distant-lands/">Poems and Distant Lands</a>, by Gu Shi</td></tr>
+		<tr><td>August 15, 2019</td><td><a href="http://crystal.raelifin.com/download/">Crystal Society</a>, by Max Harms (Prologue and Chapters 1-2)</td></tr>
+		<tr><td>August 8, 2019</td><td><b>Omphalos</b>, by Ted Chiang</td></tr>
+		<tr><td>August 1, 2019</td><td><b>Foundation</b>, by Isaac Asimov (Section 1, "The Psychohistorians", and Section 2, "The Encyclopedists")</td></tr>
+		<tr><td>July 25, 2019</td><td><a href="https://slate.com/technology/2019/06/space-leek-chen-qiufan-stanley-chen.html">Space Leek</a>, by Stanley Chen</td></tr>
+		<tr><td>July 18, 2019</td><td><a href="http://www.astro.sunysb.edu/fwalter/AST389/TEXTS/Nightfall.htm">Nightfall</a> and <a href="http://www.multivax.com/last_question.html">The Last Question</a>, by Isaac Asimov</td></tr>
+		<tr><td>July 11, 2019</td><td><b>Anxiety is the Dizziness of Freedom</b>, by Ted Chiang</td></tr>
+		<tr><td>July 4, 2019</td><td><a href="https://www.baen.com/Chapters/1439132852/1439132852___1.htm">Monster Hunter International</a> (Chapter 1),  by Larry Correia, and <a href="http://escapepod.org/2013/09/14/ep413-why-i-left-harrys-all-night-hamburgers/">Why I Left Harry's All Night Hamburgers</a>,  by Lawrence Watt-Evans</td></tr>
+		<tr><td>June 27, 2019</td><td><a href="https://www.wired.com/story/future-of-work-placebo-charles-yu/">Placebo</a> and <a href="https://www.wired.com/2016/12/charles-yu-subtext/">Subtext</a>,  by Charles Yu, and <a href="http://storyoftheweek.loa.org/2018/10/baby-you-were-great.html ">Baby, You Were Great</a>,  by Kate Wilhelm</td></tr>
+		<tr><td>June 20, 2019</td><td><a href="https://scificats.files.wordpress.com/2011/04/bridesicle.pdf">Bridesicle</a>, by Will McIntosh, and <a href="http://clarkesworldmagazine.com/jemisin_09_09/">Non-Zero Probabilities </a>, by N K Jemisin</td></tr>
+		<tr><td>June 13, 2019</td><td><a href="http://clarkesworldmagazine.com/debodard_01_14_reprint/">Ship's Brother</a> and <a href="http://clarkesworldmagazine.com/debodard_06_19/">Two Sisters in Exile</a>, by Aliette de Bodard</td></tr>
+		<tr><td>June 6, 2019</td><td><a href="http://eidolon.net/?story=The%20Extra">The Extra</a>, by Greg Egan</td></tr>
+		<tr><td>May 30, 2019</td><td><a href="https://www.baen.com/Chapters/9781597290609/9781597290609.htm">A Song for Lya</a>, by George R R Martin</td></tr>
+		<tr><td>May 23, 2019</td><td><a href="http://compellingsciencefiction.com/stories/tav.html">Tav</a>, by Dustin Kennedy</td></tr>
+		<tr><td>May 16, 2019</td><td><b>The Men of Greywater Station</b>, by George R R Martin</td></tr>
+		<tr><td>May 9, 2019</td><td><b>Time Exposures</b>, by Wilson Tucker, and <b>The Dead Past</b>, by Isaac Asimov</td></tr>
+		<tr><td>April 25, 2019</td><td><b>Think Like a Dinosaur</b>, by James Patrick Kelly</td></tr>
+		<tr><td>April 18, 2019</td><td><a href="http://supercommunity.e-flux.com/texts/the-great-silence/">The Great Silence</a>, by Ted Chiang, <b>This Book is Full of Spiders: The Molly Chapter</b>, by David Wong, and <a href="http://clarkesworldmagazine.com/larson_11_18/">Octo-Heist in Progress</a>, by Rich Larson</td></tr>
+		<tr><td>April 11, 2019</td><td><a href="http://www.slate.com/articles/technology/future_tense/2016/04/mika_model_a_new_short_story_from_paolo_bacigalupi.html">Mika Model</a>, by Paolo Bacigalupi, and <a href="https://www.tor.com/2018/06/06/meat-and-salt-and-sparks-rich-larson">Meat and Salt and Sparks</a>, by Rich Larson</td></tr>
+		<tr><td>April 4, 2019</td><td><b>The Sith of Datawork</b>, by Ken Liu, <b>Mazer in Prison</b>, by Orson Scott Card, and <b>Snow Crash (Chapters 37-38)</b>, by Neal Stephenson</td></tr>
+		<tr><td>March 28, 2019</td><td><a href="https://www.lesswrong.com/posts/HawFh7RvDM4RyoJ2d/three-worlds-collide-0-8">Three Worlds Collide</a>, by Eliezer Yudkowsky</td></tr>
+		<tr><td>March 21, 2019</td><td><b>Swarm</b>, by Bruce Sterling, and <a href="http://lupinworks.com/glit6756/informant/sai3/sentry.pdf">Sentry</a>, by Frederick Brown</td></tr>
+		<tr><td>March 14, 2019</td><td><b>SCP night</b>: <a href="http://www.scp-wiki.net/we-need-to-talk-about-fifty-five">We need to talk about fifty-five</a>, <a href="http://www.scp-wiki.net/scp-055">SCP-055</a>, <a href="http://www.scp-wiki.net/introductory-antimemetics">Introductory Antimemetics</a>, <a href="http://www.scp-wiki.net/scp-2845">SCP-2845</a>, and <a href="http://www.scp-wiki.net/scp-1762">SCP-1762</a></td></tr>
+		<tr><td>March 7, 2019</td><td><a href="https://slate.com/technology/2019/01/thoughts-and-prayers-ken-liu-short-story.html">Thoughts and Prayers</a>, by Ken Liu, and <a href="https://slate.com/technology/2018/12/annalee-newitz-short-story-when-robot-and-crow-saved-east-st-louis.html">When Crow and Robot Saved East St. Louis</a>, by Annalee Newitz</td></tr>
+		<tr><td>February 28, 2019</td><td><b>The Wandering Earth</b>, by Liu Cixin</td></tr>
+		<tr><td>February 21, 2019</td><td><a href="https://www.technologyreview.com/s/612590/the-reunion-a-new-science-fiction-story-about-surveillance-in-china/">The Reunion</a>, by Chen Qiufan (Stanley Chen)</td></tr>
+		<tr><td>January 31, 2019</td><td><a href="https://slate.com/technology/2018/11/mark-stasenko-overvalued-short-story.html">Overvalued</a>, by Mark Stasenko</td></tr>
+		<tr><td>January 24, 2019</td><td><b>Fahrenheit 451</b> (Parts 2-3 of 3), by Ray Bradbury</td></tr>
+		<tr><td>January 17, 2019</td><td><a href="https://eyeofmidas.com/scifi/Turtledove_RoadNotTaken.pdf">The Road Not Taken</a>, by Harry Turtledove, and <a href="https://www.baen.com/Chapters/1439133778/1439133778___2.htm">The High Crusade</a> (Chapters 1-5), by Poul Anderson</td></tr>
+		<tr><td>January 10, 2019</td><td><b>Eve and Eve (夏娃与夏娃)</b>, by Xiu Xinyu (with the author)</td></tr>
+		<tr><td>January 3, 2019</td><td><b>Fahrenheit 451</a> (Part 1 of 3)</b>, by Ray Bradbury</td></tr>
+		<tr><td>December 27, 2018</td><td><a href="http://will.tip.dhappy.org/blog/Compression%20Trees/.../book/by/Connie%20Willis/All%20Seated%20on%20the%20Ground/Connie%20Willis%20-%20All%20Seated%20on%20the%20Ground.html">All Seated On the Ground</a>, by Connie Willis</td></tr>
+		<tr><td>December 20, 2018</td><td><a href="http://www.sfsfss.com/stories/Blessed-By-An-Angel-Peter-F-Hamilton.html">Blessed by an Angel</a>, by Peter F Hamilton</td></tr>
+		<tr><td>December 13, 2018</td><td><a href="http://clarkesworldmagazine.com/xiu_03_18/">Farewell Adam</a> (<a href="http://www.fx361.com/page/2018/0525/3553327.shtml">告别亚当</a>), by Xiu Xinyu (修新羽), and <a href="http://www.lightspeedmagazine.com/fiction/veil-ignorance/">Veil of Ignorance</a>, by David Barr Kirtley </td></tr>
+		<tr><td>December 6, 2018</td><td><a href="https://uncannymagazine.com/article/fandom-for-robots">Fandom for Robots</a>, by Vina Jie-Min Prasad</td></tr>
+		<tr><td>November 29, 2018</td><td><b>Far Rainbow</b>, by Boris & Arkady Strugatsky</td></tr>
+		<tr><td>November 22, 2018</td><td><a href="http://www.sfsfss.com/stories/HoustonHouston.html">Houston, Houston, do you read?</a>, by James Tiptree, Jr</td></tr>
+		<tr><td>November 15, 2018</td><td><a href="http://www.baen.com/Chapters/0743471598/0743471598___5.htm">Solution Unsatisfactory</a>, by Robert A Heinlein</td></tr>
+		<tr><td>November 8, 2018</td><td><a href="http://slatestarcodex.com/2018/10/30/sort-by-controversial/">Sort by Controversial</a>, by Scott Alexander</td></tr>
+		<tr><td>November 1, 2018</td><td><a href="https://www.fimfiction.net/story/62074/Friendship-is-Optimal">My Little Pony: Friendship is Optimal</a></td></tr>
+		<tr><td>October 25, 2018</td><td><a href="http://clarkesworldmagazine.com/wu_10_18/">Facecrafter (捏脸人)</a>, by Anna Wu (吴霜)</td></tr>
+		<tr><td>October 18, 2018</td><td><b>The Truth of Fact, the Truth of Feeling</b>, by Ted Chiang</td></tr>
+		<tr><td>October 11, 2018</td><td><b>Story of Your Life</b>, by Ted Chiang</td></tr>
+		<tr><td>October 4, 2018</td><td><a href="https://breakermag.com/kchain-science-fiction-premiere-byzantine-empathy/">Byzantine Empathy</a>, by Ken Liu</td></tr>
+		<tr><td>September 27, 2018</td><td><a href="http://compellingsciencefiction.com/stories/downandout.html">Down and Out</a>, by Ken Wharton</td></tr>
+		<tr><td>September 20, 2018</td><td><b>Beneath the Sunlit Shadows</b> and <b>The God Thieves</b>, by Derek Künsken</td></tr>
+		<tr><td>September 13, 2018</td><td><a href="https://www.baen.com/Chapters/1416520724/1416520724___4.htm">The Ungoverned</a>, by Vernor Vinge</td></tr>
+		<tr><td>September 6, 2018</td><td><b>Three Body Problem Trilogy</b> (long read), by Liu Cixin</td></tr>
+		<tr><td>August 30, 2018</td><td><a href="http://compellingsciencefiction.com/stories/floaterscantfloat.html">Floaters Can't Float</a>, by Pip Coen</td></tr>
+		<tr><td>August 23, 2018</td><td><a href="http://compellingsciencefiction.com/stories/inside-of-body-experience.html">Inside of Body Experience</a>, by Pip Coen</td></tr>
+		<tr><td>August 16, 2018</td><td><b>Paradises Lost</b>, by Ursula K Le Guin</td></tr>
+		<tr><td>August 9, 2018</td><td><a href="http://www.strangehorizons.com/fiction/utopia-lol/">Utopia, Lol?</a>, by Jamie Wahls</td></tr>
+		<tr><td>August 2, 2018</td><td><a href="https://www.tor.com/2013/04/24/the-ink-readers-of-doi-saket/">The Ink Readers of Doi Saket</a> and <b>The Boy Who Cast No Shadow</b>, by Thomas Olde Heuvelt</td></tr>
+		<tr><td>July 26, 2018</td><td><a href="http://www.clarkesworldmagazine.com/gu_09_17/">Mobius Continuum</a> and <a href="http://www.clarkesworldmagazine.com/gu_03_16/">Chimera</a>, by Gu Shi</td></tr>
+		<tr><td>July 19, 2018</td><td><a href="http://www.gutenberg.org/files/201/201-h/201-h.html">Flatland: A Romance of Many Dimensions</a>, by A. Square</td></tr>
+		<tr><td>July 12, 2018</td><td><a href="http://www.ericjamesstone.com/blog/wp-content/uploads/2010/11/That-Leviathan-Whom-Thou-Hast-Made-Eric-James-Stone.pdf">That Leviathan, Whom Thou Hast Made</a>, by Eric James Stone</td></tr>
+		<tr><td>July 5, 2018</td><td><b>Book report evening</b> - choose a book you enjoyed</td></tr>
+		<tr><td>June 28, 2018</td><td><b>Book report evening</b> - choose a book you enjoyed</td></tr>
+		<tr><td>June 14, 2018</td><td><b>Bloodchild</b>, by Octavia Butler</td></tr>
+		<tr><td>June 7, 2018</td><td><a href="https://www.apex-magazine.com/welcome-to-your-authentic-indian-experience/">Welcome To Your Authentic Indian Experience</a>, by Rebecca Roanhorse</td></tr>
+		<tr><td>May 31, 2018</td><td><b>Unstable Orbits in the Space of Lies</b>, by Greg Egan</td></tr>
+		<tr><td>May 24, 2018</td><td><a href="http://www.spiderrobinson.com/melancholyelephants.html">Melancholy Elephants</a>, by Spider Robinson, and <b>The Green Ship</b>, by Francesco Verso</td></tr>
+		<tr><td>May 17, 2018</td><td><a href="https://rifters.com/real/shorts/PeterWatts_TheIsland.pdf">The Island</a>, by Peter Watts, and <a href="http://www.terrybisson.com/page6/page6.html">They're Made Out of Meat</a>, by Terry Bisson</td></tr>
+		<tr><td>May 10, 2018</td><td><a href="https://medium.com/@glorioushubris/the-new-mother-9df848da415b">The New Mother</a>, by Eugene Fisher</td></tr>
+		<tr><td>May 3, 2018</td><td><a href="http://www.asimovs.com/assets/1/6/WindWillRove_Pinsker.pdf">Wind Will Rove</a>, by Sarah Pinsker</td></tr>
+		<tr><td>April 26, 2018</td><td><b>The Peddler’s Apprentice</b>, by Vernor Vinge</td></tr>
+		<tr><td>April 19, 2018</td><td><a href="http://outofthiseos.typepad.com/blog/files/GregEganGlory.pdf">Glory</a>, by Greg Egan</td></tr>
+		<tr><td>April 12, 2018</td><td><b>Brave New World</b> (long read), by Aldous Huxley</td></tr>
+		<tr><td>April 5, 2018</td><td><a href="http://clarkesworldmagazine.com/xia_10_17/">The Psychology Game</a>, by Xia Jia (with the author)</td></tr>
+		<tr><td>March 29, 2018</td><td><b>Robot AL-76 Goes Astray</b> and <b>Victory Unintentional</b>, by Isaac Asimov</td></tr>
+		<tr><td>March 22, 2018</td><td><a href="http://clarkesworldmagazine.com/fei_04_17/">The Robot Who Liked to Tell Tall Tales</a> and <b>War of the God</b>, by Fei Dao</td></tr>
+		<tr><td>March 8, 2018</td><td><b>When It Changed</b>, by Joanna Russ, and <a href="https://uncannymagazine.com/article/talons-can-crush-galaxies">Our Talons Can Crush Galaxies</a>, by Brooke Bolander</td></tr>
+		<tr><td>March 1, 2018</td><td><a href="https://uncannymagazine.com/article/and-then-there-were-n-one">And Then There Were N-One</a>, by Sarah Pinsker</td></tr>
+		<tr><td>February 22, 2018</td><td><b>Fast Times at Fairmont High</b>, by Vernor Vinge</td></tr>
+		<tr><td>February 1, 2018</td><td><b>Remembrance</b> (& other stories) by Ursula K Le Guin</td></tr>
+		<tr><td>January 25, 2018</td><td><a href="https://epochemagazine.org/fiction-colosseum-1a887daf7255">Colosseum</a>, by Blake Stone-Banks (with the author)</td></tr>
+		<tr><td>January 18, 2018</td><td><a href="http://kevindaslan.com/roy/">Roy</a>, by Kevin Aslan</td></tr>
+		<tr><td>January 11, 2018</td><td><a href="https://www.ida.liu.se/~tompe44/lsff-book/Vernor%20Vinge%20-%20The%20Cookie%20Monster.htm">The Cookie Monster</a>, by Vernor Vinge</td></tr>
+		<tr><td>December 28, 2017</td><td><b>Therefore I Am: The Tale of IG-88</b>, by Kevin J. Anderson</td></tr>
+		<tr><td>December 21, 2017</td><td><a href="https://sites.uni.edu/morgans/astro/course/TheStar.pdf">The Star</a>, by Arthur C Clarke, and <a href="http://www.strangehorizons.com/2003/20031222/december.shtml">In the Late December</a>, by Greg van Eekhout</td></tr>
+		<tr><td>December 14, 2017</td><td><a href="http://crystal.raelifin.com/">Crystal Society</a>, by Max Harms</td></tr>
+		<tr><td>December 7, 2017</td><td><b>Cocoon</b>, by Greg Egan</td></tr>
+		<tr><td>November 30, 2017</td><td><a href="http://www.lightspeedmagazine.com/fiction/standard-loneliness-package/">Standard Loneliness Package</a>, by Charles Yu</td></tr>
+		<tr><td>November 23, 2017</td><td><a href="http://arcfinity.tumblr.com/post/41444017506/is-tim-maughans-limited-edition-the-best-short">Limited Edition</a>, by Tim Maughan</td></tr>
+		<tr><td>November 16, 2017</td><td><b>The Way of Cross and Dragon</b>, by George R. R. Martin</td></tr>
+		<tr><td>November 9, 2017</td><td><a href="http://www.gregegan.net/BORDER/Border.html">Border Guards</a>, by Greg Egan</td></tr>
+		<tr><td>November 2, 2017</td><td><b>The Day Before the Revolution</b> and <a href="http://engl210-deykute.wikispaces.umb.edu/file/view/omelas.pdf">The Ones Who Walk Away from Omelas</a>, by Urusla LeGuin</td></tr>
+		<tr><td>October 26, 2017</td><td><b>Manna From Heaven</b>, <b>Loaves and Fishes</b> and <b>Second Helping</b>, by George R R Martin (from Tuf Voyaging)</td></tr>
+		<tr><td>October 19, 2017</td><td><a href="https://maggieshenking.com/ball-and-chain/">Ball and Chain</a>, by Maggie Shen King</td></tr>
+		<tr><td>October 12, 2017</td><td><a href="http://www.lightspeedmagazine.com/fiction/spider-the-artist/">Spider the Artist</a>, by Nnedi Okorafor	</td></tr>
+		<tr><td>October 5, 2017</td><td><a href="https://seat14c.com/future_ideas/37D">Incorruptible</a>, by Peter Watts</td></tr>
+		<tr><td>September 28, 2017</td><td><a href="https://www.tor.com/2011/11/02/hello-moto/">Hello Moto</a>, by Nnedi Okorafor</td></tr>
+		<tr><td>September 21, 2017</td><td><a href="http://clarkesworldmagazine.com/yu_04_11/">The Cartographer Wasps and the Anarchist Bees</a>, by E Lily Yu</td></tr>
+		<tr><td>September 14, 2017</td><td><a href="https://www.iconeye.com/architecture/features/item/4274-china-mieville-the-rope-is-the-world">The Rope is the World</a>, by China Mieville</td></tr>
+		<tr><td>September 7, 2017</td><td><a href="https://ia802706.us.archive.org/33/items/TedChiangSeventyTwoLetters/Ted_Chiang_72_Letters.pdf">Seventy-Two Letters</a>, by Ted Chiang, and <b>The Bridge Between Truth/Death and Power/Knowledge: Ted Chiang's "Seventy-Two Letters"</b>, by Greg Beatty</td></tr>
+		<tr><td>August 31, 2017</td><td><a href="https://archive.org/details/How_to_Write_Science_Fiction_and_Fantasy_by_Orson_Scott_Card/page/n0">How to Write Science Fiction</a>, by Orson Scott Card</td></tr>
+		<tr><td>August 24, 2017</td><td><b>Point of View</b>, <b>Think!</b> and <b>Sally</b>, by Isaac Asimov</td></tr>
+		<tr><td>August 17, 2017</td><td><b>The Three Body Problem</b>, by Liu Cixin</td></tr>
+		<tr><td>August 10, 2017</td><td><a href="http://www.lightspeedmagazine.com/fiction/invisible-planets/">Invisible Planets</a>, by Hao Jingfang</td></tr>
+		<tr><td>August 3, 2017</td><td><b>Book report evening</b> - choose a book you enjoyed</td></tr>
+		<tr><td>July 27, 2017</td><td><a href="http://www.antipope.org/charlie/blog-static/fiction/accelerando/accelerando-intro.html">Accelerando</a> (Chapter 9), by Charles Stross</td></tr>
+		<tr><td>July 13, 2017</td><td><a href="https://jamiemetzl.com/2015123being-human-in-an-age-of-artificial-intelligence/">A Visit to Weizenbaum</a>, by Jamie Metzl</td></tr>
+		<tr><td>July 6, 2017</td><td><b>The Gardens of Babylon</b>, by Hassan Blasim</td></tr>
+		<tr><td>June 29, 2017</td><td><a href="http://clarkesworldmagazine.com/debodard_06_12/">Immersion</a>, by Aliette de Bodard</td></tr>
+		<tr><td>June 22, 2017</td><td><b>The Matter of Seggri</b>, by Ursula K Le Guin</td></tr>
+		<tr><td>June 15, 2017</td><td><a href="http://www.antipope.org/charlie/blog-static/fiction/accelerando/accelerando-intro.html">Accelerando</a> (Chapter 8), by Charles Stross</td></tr>
+		<tr><td>June 8, 2017</td><td><b>Liking What You See: A Documentary</b>, by Ted Chiang</td></tr>
+		<tr><td>June 1, 2017</td><td><a href="https://www.sfwriter.com/ststream.htm">Stream of Consciousness</a>, <a href="https://www.sfwriter.com/styousee.htm">You See But You Do Not Observe</a>, and <a href="https://sfwriter.com/blog/?p=3714">The Stanley Cup Caper</a>, by Robert J. Sawyer</td></tr>
+		<tr><td>May 25, 2017</td><td><a href="https://www.fimfiction.net/story/62074/Friendship-is-Optimal">My Little Pony: Friendship is Optimal</a> (Chapters 5-11)</td></tr>
+		<tr><td>May 18, 2017</td><td><a href="https://www.fimfiction.net/story/62074/Friendship-is-Optimal">My Little Pony: Friendship is Optimal</a> (Chapters 0-4)</td></tr>
+		<tr><td>May 11, 2017</td><td><a href="https://www.reddit.com/r/rational/comments/5dwodc/short_everyone_is_todd_3577_words/">Everyone is Todd</a></td></tr>
+		<tr><td>May 4, 2017</td><td><a href="http://strangehorizons.com/fiction/kenneth-a-users-manual/">Kenneth: a Users' Manual</a>, by Sam J. Miller</td></tr>
+		<tr><td>April 27, 2017</td><td><a href="http://www.gregegan.net/PLANCK/Complete/Planck.html">The Planck Dive</a>, by Greg Egan</td></tr>
+		<tr><td>April 20, 2017</td><td><a href="https://archive.org/details/Galaxy_v23n01_1964-10/page/n0">The Tactful Saboteur</a>, by Frank Herbert</td></tr>
+		<tr><td>April 13, 2017</td><td><b>Crystal Mentality</b>, by Max Harms (long read)</td></tr>
+		<tr><td>April 6, 2017</td><td><a href="http://ttapress.com/553/crystal-nights-by-greg-egan/">Crystal Nights</a>, by Greg Egan</td></tr>
+		<tr><td>March 30, 2017</td><td><b>The Truth of Fact, The Truth of Feeling</b>, by Ted Chiang</td></tr>
+		<tr><td>March 23, 2017</td><td><a href="https://rifters.com/real/shorts/PeterWatts_TheIsland.pdf">The Island</a>, by Peter Watts</td></tr>
+		<tr><td>March 16, 2017</td><td><b>Our Lady of Chernobyl</b>, by Greg Egan</td></tr>
+		<tr><td>March 2, 2017</td><td><a href="http://clarkesworldmagazine.com/liu_12_15/">Yuanyuan's Bubbles</a>, by Liu Cixin</td></tr>
+		<tr><td>February 23, 2017</td><td><a href="https://www.utilitarianism.com/greg-egan/Reasons-To-Be-Cheerful.pdf">Reasons to be Cheerful</a>, by Greg Egan</td></tr>
+		<tr><td>February 16, 2017</td><td><a href="http://www.hpmor.com/">Harry Potter and the Methods of Rationality</a> (Chapters 78 to end), by Eliezer Yudkowsky</td></tr>
+		<tr><td>February 9, 2017</td><td><b>Hell is the Absence of God</b>, by Ted Chiang, and <a href="http://kenliu.name/stories/single-bit-error/">Single Bit Error</a>, by Ken Liu</td></tr>
+		<tr><td>January 26, 2017</td><td><a href="http://clarkesworldmagazine.com/pan_07_15/">The Hunger Tower</b>, by Pan Haitian</td></tr>
+		<tr><td>January 19, 2017</td><td><a href="https://www.tor.com/2010/08/05/divided-by-infinity/">Divided by Infinity</b>, by Robert Charles Wilson</td></tr>
+		<tr><td>January 12, 2017</td><td><a href="http://www.hpmor.com/">Harry Potter and the Methods of Rationality</a> (Chapters 38-77), by Eliezer Yudkowsky</td></tr>
+		<tr><td>December 29, 2016</td><td><b>Year in review discussion</b></td></tr>
+		<tr><td>December 22, 2016</td><td><a href="http://socialistreview.org.uk/291/tis-season">‘Tis the Season</a>, by China Mieville</td></tr>
+		<tr><td>December 15, 2016</td><td><a href="http://www.antipope.org/charlie/blog-static/fiction/accelerando/accelerando-intro.html">Accelerando</a> (Chapter 7), by Charles Stross</td></tr>
+		<tr><td>December 8, 2016</td><td><b>Learning To Be Me</b> and <b>Closer</b>, by Greg Egan (from Axiomatic)</td></tr>
+		<tr><td>December 1, 2016</td><td><a href="http://www.hpmor.com/">Harry Potter and the Methods of Rationality</a> (Chapters 1-37), by Eliezer Yudkowsky</td></tr>
+		<tr><td>November 24, 2016</td><td><b>The Walk</b>, by Greg Egan (from Axiomatic)</td></tr>
+		<tr><td>November 17, 2016</td><td><a href="http://www.hplovecraft.com/writings/texts/fiction/cc.aspx">The Call of Cthulu</a>, by H.P. Lovecraft</td></tr>
+		<tr><td>November 10, 2016</td><td><b>Understand</b> and <a href="https://www.nature.com/articles/35014679">The Evolution of Human Science (Catching Crumbs from the Table)</a>, by Ted Chiang</td></tr>
+		<tr><td>November 3, 2016</td><td><a href="http://www.antipope.org/charlie/blog-static/fiction/accelerando/accelerando-intro.html">Accelerando</a> (Chapter 6), by Charles Stross, and <b>The Great Silence</b>, by Ted Chiang</td></tr>
+		<tr><td>October 27, 2016</td><td><b>Who Goes There</b>, by John W. Campbell, and <a href="http://clarkesworldmagazine.com/watts_01_10/">The Things</a>, by Peter Watts</td></tr>
+		<tr><td>October 20, 2016</td><td><a href="https://www.baen.com/Chapters/9781597290609/9781597290609.htm">A Song for Lya</a>, by George R. R. Martin</td></tr>
+		<tr><td>October 13, 2016</td><td><a href="http://www.antipope.org/charlie/blog-static/fiction/accelerando/accelerando-intro.html">Accelerando</a> (Chapter 5), by Charles Stross</td></tr>
+		<tr><td>October 6, 2016</td><td><b>Story of Your Life</b>, by Ted Chiang</td></tr>
+		<tr><td>September 29, 2016</td><td><b>Hundred Light Year Diary</b>, by Greg Egan (from Axiomatic), and <a href="http://www.concatenation.org/futures/whatsexpected.pdf">What’s Expected of Us</a>, by Ted Chiang</td></tr>
+		<tr><td>September 22, 2016</td><td><a href="https://www.lesswrong.com/posts/HawFh7RvDM4RyoJ2d/three-worlds-collide-0-8">Three Worlds Collide</a>, by Eliezer Yudkowsky</td></tr>
+		<tr><td>September 15, 2016</td><td><a href="http://kenliu.name/stories/algorithms/">The Algorithms for Love</a>, by Ken Liu, and <a href="http://www.terrybisson.com/page6/page6.html">They're Made Out of Meat</a>, by Terry Bisson</td></tr>
+		<tr><td>September 8, 2016</td><td><a href="http://www.antipope.org/charlie/blog-static/fiction/accelerando/accelerando-intro.html">Accelerando</a> (Chapter 4), by Charles Stross</td></tr>
+		<tr><td>September 1, 2016</td><td><a href="http://crystal.raelifin.com/">Crystal Society</a>, by Max Harms (long read)</td></tr>
+		<tr><td>August 4, 2016</td><td><b>How To Create A Mind</b>, by Ray Kurzweil (Chapters 3 & 9)</td></tr>
+		<tr><td>July 28, 2016</td><td><a href="http://www.antipope.org/charlie/blog-static/fiction/accelerando/accelerando-intro.html">Accelerando</a> (Chapter 3), by Charles Stross</td></tr>
+		<tr><td>July 21, 2016</td><td><a href="http://www.antipope.org/charlie/blog-static/fiction/accelerando/accelerando-intro.html">Accelerando</a> (Chapters 1-2), by Charles Stross</td></tr>
+		<tr><td>July 14, 2016</td><td><a href="http://emilkirkegaard.dk/en/wp-content/uploads/Robert-A.-Heinlein-All-You-Zombies.pdf">All You Zombies</a>, by Robert A Heinlein</td></tr>
+		<tr><td>July 7, 2016</td><td><b>Liking What You See: A Documentary</b>, by Ted Chiang</td></tr>
+		<tr><td>June 30, 2016</td><td><a href="http://www.multivax.com/last_question.html">The Last Question</a>, by Isaac Asimov</td></tr>
+		<tr><td>June 30, 2016</td><td><b>The Immortal Bard</b>, by Isaac Asimov</td></tr>
+		<tr><td>June 23, 2016</td><td><b>A Sound of Thunder</b>, by Ray Bradbury</td></tr>
+		<tr><td>June 16, 2016</td><td><b>The Concentration City</b>, by J G Ballard</td></tr>
+		<tr><td>June 16, 2016</td><td><a href="http://www.societashorti.com/jdballard_thegardenoftime.pdf">The Garden of Time</a>, by J G Ballard</td></tr>
+		<tr><td>June 9, 2016</td><td><a href="http://www.gutenberg.org/files/201/201-h/201-h.html">Flatland: A Romance of Many Dimensions</a> (part 1), by A Square</td></tr>
+		<tr><td>June 2, 2016</td><td><b>Creator</b>, by David Lake</td></tr>
+		<tr><td>May 26, 2016</td><td><b>Do Androids Dream of Electric Sheep?</b>, by Philip K Dick</td></tr>
+		<tr><td>May 19, 2016</td><td><b>Discussion on the definition of science fiction</b></td></tr>
+		<tr><td>May 12, 2016</td><td><a href="http://www.revolutionsf.com/fiction/weseethings/01.html">We See Things Differently</a>, by Bruce Sterling</td></tr>
+		<tr><td>May 5, 2016</td><td><a href="https://uncannymagazine.com/article/folding-beijing-2/">Folding Beijing</a>, by Hao Jingfang</td></tr>
+		<tr><td>April 28, 2016</td><td><b>Teacher’s Pest</b>, by Orson Scott Card</td></tr>
+		<tr><td>April 21, 2016</td><td><b>Zima Blue</b>, by Alastair Reynolds</td></tr>
+		<tr><td>April 14, 2016</td><td><b>The Truth of Fact the Truth of Feeling</b>, by Ted Chiang</td></tr>
+		<tr><td>April 7, 2016</td><td><b>Seveneves</b>, by Neal Stephenson (long read)</td></tr>
+		<tr><td>March 31, 2016</td><td><a href="https://www.lightspeedmagazine.com/fiction/exhalation/">Exhalation</a>, by Ted Chiang</td></tr>
+		<tr><td>October 29, 2015</td><td><a href="http://clarkesworldmagazine.com/watts_01_10/">The Things</a>, by Peter Watts</td></tr>
+		<tr><td>September 28, 2015</td><td><a href="https://ralafferty.com/2017/05/22/through-other-eyes/">Through Other Eyes</a>, by R A Lafferty</td></tr>
+		<tr><td>September 7, 2015</td><td><a href="http://clarkesworldmagazine.com/chen_08_11/">The Fish of Lijiang</a>, by Chen Qiufan (Stanley Chen)</td></tr>
+		<tr><td>August 31, 2015</td><td><b>Ball Lightning</b>, by Liu Cixin (long read)</td></tr>
+		<tr><td>August 3, 2015</td><td><b>Ancillary Justice</b>, by Ann Leckie (long read)</td></tr>
+		<tr><td>July 20, 2015</td><td><a href="https://www.depauw.edu/sfs/backissues/80/labare80art.htm">The Future: 'Wrapped in That Mysterious Japanese Way'</a>, by Joshua La Bare</td></tr>
+		<tr><td>July 13, 2015</td><td><b>Induction</b>, by Greg Egan</td></tr>
+		<tr><td>July 6, 2015</td><td><b>Stars my Destination</b>, by Alfred Bester (long read)</td></tr>
+		<tr><td>June 29, 2015</td><td><a href="https://thomas-hersey.wiki.uml.edu/file/view/Roadside%2BPicnic.pdf">Roadside Picnic</a>, by Arkady and Boris Strugatsky</td></tr>
+		<tr><td>June 22, 2015</td><td><b>Bernie the Faust</b>, by William Tenn</td></tr>
+		<tr><td>June 15, 2015</td><td><b>Player of Games</b>, by Iain M Banks (long read)</td></tr>
+		<tr><td>June 8, 2015</td><td><a href="https://www.slatestarcodex.com/2015/06/02/and-i-show-you-how-deep-the-rabbit-hole-goes/">…And I Show You How Deep The Rabbit Hole Goes</a>, by Scott Alexander</td></tr>
+		<tr><td>June 1, 2015</td><td><b>Mind of my Mind</b>, by Octavia Butler</td></tr>
+		<tr><td>June 1, 2015</td><td><b>Talk on space law</b>, by Chris</td></tr>
+		<tr><td>May 25, 2015</td><td><a href="http://tnellen.com/cybereng/harrison.html">Harrison Bergeron</a>, by Kurt Vonnegut</td></tr>
+		<tr><td>May 18, 2015</td><td><b>The Three Body Problem</b>, by Liu Cixin (long read)</td></tr>
+		<tr><td>May 11, 2015</td><td><a href="http://clarkesworldmagazine.com/debodard_06_12/">Immersion</a>, by Aliette de Bodard</td></tr>
+		<tr><td>May 4, 2015</td><td><b>The City of Silence</b>, by Ma Boyong</td></tr>
+		<tr><td>April 27, 2015</td><td><a href="https://craphound.com/down/download/">Down and Out in the Magic Kingdom</a>, by Cory Doctorow (long read)</td></tr>
+		<tr><td>April 20, 2015</td><td><b>Bordered in Black</b>, by Larry Niven</td></tr>
+		<tr><td>April 13, 2015</td><td><b>The Bones of the Earth</b>, by Ursula K Le Guin</td></tr>
+		<tr><td>April 6, 2015</td><td><a href="http://www.sfsfss.com/stories/HoustonHouston.html">Houston, Houston, do you read?</a>, by James Tiptree, Jr.</td></tr>
+		<tr><td>March 16, 2015</td><td><b>The Martian</b>, by Andy Weir (long read)</td></tr>
+		<tr><td>March 9, 2015</td><td><a href="https://www.gutenberg.org/files/32032/32032-h/32032-h.htm">Second Variety</a>, by Philip K Dick</td></tr>
+		<tr><td>February 2, 2015</td><td><a href="https://varley.net/story/equinoctial/">Equinoctal</a>, by John Varley</td></tr>
+		<tr><td>January 19, 2015</td><td><b>Swarm</b>, by Bruce Sterling</td></tr>
+		<tr><td>December 29, 2014</td><td><a href="http://theanarchistlibrary.org/library/holley-cantine-double-double-toil-and-trouble.pdf">Double, Double, Toil and Trouble</a>, by Holley Cantine</td></tr>
+		<tr><td>December 15, 2014</td><td><a href="https://www.scifiwright.com/2018/11/guest-law/">Guest Law</a>, by John C Wright</td></tr>
+		<tr><td>November 24, 2014</td><td><a href="https://www.tor.com/2010/08/05/divided-by-infinity/">Divided by Infinity</a>, by Robert Charles Wilson, and <a href="http://ttapress.com/553/crystal-nights-by-greg-egan/">Crystal Nights</a>, by Greg Egan</td></tr>
+	</table>
+	
+	</div>
+	
+	
+  </body>
+</html>
