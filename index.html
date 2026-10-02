@@ -27,8 +27,9 @@
 	}
 	
 	function checkLaziness(){
-		meeting_date=new Date("2026-09-22")
-		if (new Date() > meeting_date){
+		meeting_date="2026-10-01";
+		meeting_date_eod=new Date(meeting_date+"T23:59:59.999");
+		if (new Date() > meeting_date_eod){
 			document.getElementById("laziness_warning").style.display="";
 		}
 	}
@@ -44,7 +45,7 @@
 	<br /><br />
 	
 			
-		Date: <b>8pm, Tuesday September 22, 2026</b>
+		Date: <b>8pm, Tuesday October 6, 2026</b>
 	
 	<br /><br />
 	
@@ -52,7 +53,7 @@
 
 	<br /><br />
 	
-		Story for discussion: <b>Crying in the Rain</b>, by Tanith Lee (1987)
+		Story for discussion: <a href="https://www.lightspeedmagazine.com/fiction/the-long-chase/">The Long Chase</a>, by Geoffrey Landis (2010), and <a href="https://vbook.lovestoblog.com/wp-content/uploads/2023/02/Arthur-C.-Clarke-History-Lesson.pdf">History Lesson</a>, by Arthur C Clarke (1949)
 	
 	<br /><br />
 		<span id="laziness_warning" style="color:red; display:none">We're sometimes a bit lazy with updating the website. If the "next meeting" is in the past we'll still probably be meeting on Tuesday at Wiggly Jiggly's (欧也 Cafe), Dongzhimen - check the WeChat group for updates.</span>
@@ -70,6 +71,8 @@
 	<div class="subheading">Previously discussed stories:</div>
 	
 	<table class="story_list">
+		<tr><td>September 29, 2026</td><td><a href="https://clarkesworldmagazine.com/ha_04_25/">In My Country</a>, by Thomas Ha (2025)</td></tr>
+		<tr><td>September 22, 2026</td><td><b>Crying in the Rain</b>, by Tanith Lee (1987)</td></tr>
 		<tr><td>September 15, 2026</td><td><a href="https://www.fictionliberationfront.net/snowbirds.html">Snowbirds</a>, by Lewis Shiner (1982), and <a href="https://www.fadedpage.com/books/20220847/html.php">Vintage Season</a>, by Lawrence O'Donnell (1948)</td></tr>
 		<tr><td>September 8, 2026</td><td><a href="https://reactormag.com/cutting-corners-yoon-ha-lee/">Cutting Corners</a>, by Yoon Ha Lee (2026)</td></tr>
 		<tr><td>September 1, 2026</td><td><a href="http://www.intergalacticmedicineshow.com/cgi-bin/mag.cgi?do=issue&vol=i1&article=_mazer">Mazer in Prison</a >, by Orson Scott Card (2005)</td></tr>
@@ -78,8 +81,6 @@
 		<tr><td>August 4, 2026</td><td><b>Dogfight</b>, by Michael Swanwick and William Gibson (1985)</td></tr>
 		<tr><td>July 28, 2026</td><td><a href="https://us.macmillan.com/books/9781429965170/futureonfire/">Rachel In Love</a>, by Pat Murphy (1987)</td></tr>
 		<tr><td>July 21, 2026</td><td><a href="https://archive.org/details/Fantasy_Science_Fiction_v010n02_1956-02_PDF/page/3/mode/1up">The Country of the Kind</a>, by Damon Knight (1956)</td></tr>
-		<tr><td>July 14, 2026</td><td><a href="https://www.lightspeedmagazine.com/fiction/the-crystal-spheres/">The Crystal Spheres</a>, by David Brin (1984)</td></tr>
-		<tr><td>July 7, 2026</td><td><a href="https://clarkesworldmagazine.com/chen_01_20/">Ancestral Temple in a Box</a>, by Chen Qiufan (2019, author) / Emily Jin (2020, translator)</td></tr>
 	</table>
 
 	<div id="showall" onclick="showAllStories()" class="show_all">Show all</div>
